@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Experimental assault rifle with a unique 'hyperburst' that fires two shots in quick succession with low recoil.  \nThe recoil-dampening mechanism adds a significant bulk to the weapon."
+SWEP.Description = "Experimental assault rifle with a unique 'hyperburst' that fires two shots in quick succession with low recoil.  \nThe stupidly-complex mechanism adds a significant bulk to the weapon."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_an94.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_an94.mdl"
@@ -252,6 +252,22 @@ SWEP.AttachmentElements = {
         BGs_VM = {
             {2, 1}
         },
+		BGs_WM = {
+            {2, 1}
+        },
+    },
+	["akmount"] = {
+        BGs_VM = {
+            {2, 0}
+        },
+        AttPosMods = {
+            [1] = {
+                Pos_VM = Vector(-5, 0.4, 3),
+                Pos_WM = Vector(-0.4, 2, 0.5),
+				VMScale = 1.2,
+            }
+        },
+        SortOrder = 2,
     },
 }
 
@@ -259,16 +275,16 @@ SWEP.AttachmentElements = {
 SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
-        Category = {"optic_cqb", "optic_medium", "optic_sniper"}, --no PSO because no dovetail mount :(
+        Category = {"optic_cqb", "optic_medium", "optic_sniper", "optic_ak"},
         Bone = "ValveBiped.AK47_rootbone",
         WMBone = "Box01",
         InstalledElements = {"tactical"},
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
         VMScale = 0.8,
-        Pos_VM = Vector(-4.85, 0.05, 5.5),
+        Pos_VM = Vector(-5.7, 0.15, 4),
         Ang_VM = Angle(90, 0, 0),
-        Pos_WM = Vector(-0.1, 5, 0-0.2),
+        Pos_WM = Vector(0, 4.25, 0.5),
         Ang_WM = Angle(0, -90, 0),
     },
     [2] = {
