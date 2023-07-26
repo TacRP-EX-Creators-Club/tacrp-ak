@@ -183,10 +183,10 @@ SWEP.FreeAimMaxAngle = 4.5
 
 // sounds
 
-local path = "tacrp/weapons/ak47/ak47_"
+local path = "tacint_shark/weapons/aek971/ak47"
 
-SWEP.Sound_Shoot = "^" .. path .. "fire-1.wav"
-SWEP.Sound_Shoot_Silenced = path .. "fire_silenced-1.wav"
+SWEP.Sound_Shoot = "^" .. path .. "_shoot.wav"
+SWEP.Sound_Shoot_Silenced = "tacint_shark/weapons/an94/ak47_suppressed_fire1.wav"
 
 SWEP.Vol_Shoot = 120
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
@@ -348,7 +348,7 @@ local function addsound(name, spath)
     })
 end
 
-addsound("tacint_aek.remove_clip", path .. "remove_clip.wav")
-addsound("tacint_aek.insert_clip", path .. "insert_clip.wav")
-addsound("tacint_aek.boltaction", path .. "boltaction.wav")
-addsound("tacint_aek.Buttstock_Back", path .. "buttstock_back.wav")
+addsound("tacint_aek.remove_clip", path .. "_clipout.wav")
+addsound("tacint_aek.insert_clip", path .. "_clipin.wav")
+addsound("tacint_aek.boltaction", path .. "_boltpull.wav")
+addsound("tacint_aek.Buttstock_Back", "tacrp/weapons/ak47/ak47_buttstock_back.wav")
