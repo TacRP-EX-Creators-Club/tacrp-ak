@@ -10,19 +10,19 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Experimental assault rifle with a 2-round 'hyperburst' that fires two shots in quick succession with low recoil. \nDespite numerous external and some internal similarities, it's not exactly an AK."
+SWEP.Description = "Experimental assault rifle with a unique 'hyperburst' that fires two shots in quick succession with low recoil.  \nThe recoil-dampening mechanism adds a significant bulk to the weapon."
 
-SWEP.ViewModel = "models/weapons/tacint/v_ak47.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_ak47.mdl"
+SWEP.ViewModel = "models/weapons/tacint_shark/v_an94.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_an94.mdl"
 
 SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 25,
+        Damage_Max = 22,
         Damage_Min = 15,
 
-        RecoilKick = 2,
+        RecoilKick = 4,
 
         MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.75,
@@ -37,7 +37,7 @@ SWEP.BalanceStats = {
         Range_Min = 400,
         Range_Max = 2000,
 
-        RPM = 600,
+        RPM = 1000,
 
         RecoilSpreadPenalty = 0.0025,
 
@@ -76,15 +76,15 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 20
-SWEP.Damage_Min = 14
-SWEP.Range_Min = 1200 // distance for which to maintain maximum damage
+SWEP.Damage_Max = 17
+SWEP.Damage_Min = 12
+SWEP.Range_Min = 1350 // distance for which to maintain maximum damage
 SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
 SWEP.Penetration = 7 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.725
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 5,
+    [HITGROUP_HEAD] = 3,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1.25,
     [HITGROUP_LEFTARM] = 1,
@@ -105,7 +105,7 @@ SWEP.Firemodes = {
 
 SWEP.RPM = 1800
 
-SWEP.Spread = 0.003
+SWEP.Spread = 0.005
 
 SWEP.ShootTimeMult = 0.5
 
@@ -113,31 +113,31 @@ SWEP.RecoilPerShot = 1
 SWEP.RecoilMaximum = 12
 SWEP.RecoilResetTime = 0.15
 SWEP.RecoilDissipationRate = 14
-SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
+SWEP.RecoilFirstShotMult = 0.5 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 0.75
+SWEP.RecoilVisualKick = 1
 
-SWEP.RecoilKick = 4
+SWEP.RecoilKick = 5
 SWEP.RecoilStability = 0.35
 
-SWEP.RecoilSpreadPenalty = 0.002
-SWEP.HipFireSpreadPenalty = 0.03
+SWEP.RecoilSpreadPenalty = 0.005
+SWEP.HipFireSpreadPenalty = 0.035
 
 SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.925
-SWEP.ShootingSpeedMult = 0.85
-SWEP.SightedSpeedMult = 0.65
+SWEP.MoveSpeedMult = 0.8
+SWEP.ShootingSpeedMult = 0.75
+SWEP.SightedSpeedMult = 0.5
 
 SWEP.ReloadSpeedMult = 0.5
 
 SWEP.AimDownSightsTime = 0.4
-SWEP.SprintToFireTime = 0.4
+SWEP.SprintToFireTime = 0.45
 
-SWEP.Sway = 1.25
-SWEP.ScopedSway = 0.15
+SWEP.Sway = 1.3
+SWEP.ScopedSway = 0.2
 
 // hold types
 
@@ -149,7 +149,7 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_SMG1
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(0, -2, -4)
+SWEP.PassivePos = Vector(0, -3, -4)
 
 SWEP.BlindFireAng = Angle(0, 5, 0)
 SWEP.BlindFirePos = Vector(3, -2, -5)
@@ -157,8 +157,8 @@ SWEP.BlindFirePos = Vector(3, -2, -5)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(0.05, 0, 0)
-SWEP.SightPos = Vector(-4.66, -7.5, -2.9)
+SWEP.SightAng = Angle(-0.03, -0.15, 0)
+SWEP.SightPos = Vector(-4.66, -7.5, -2.45)
 
 SWEP.CorrectivePos = Vector(0, 0, -0.05)
 SWEP.CorrectiveAng = Angle(0.75, 0.7, 0)
@@ -172,7 +172,7 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 SWEP.ClipSize = 30
 SWEP.Ammo = "smg1"
 
-SWEP.ReloadTimeMult = 1
+SWEP.ReloadTimeMult = 1.05
 SWEP.DropMagazineModel = "models/weapons/tacint/magazines/ak47.mdl"
 SWEP.DropMagazineImpact = "metal"
 
@@ -183,10 +183,10 @@ SWEP.FreeAimMaxAngle = 4.5
 
 // sounds
 
-local path = "tacrp/weapons/ak47/ak47_"
+local path = "tacint_shark/weapons/an94/ak47_"
 
-SWEP.Sound_Shoot = "^" .. path .. "fire-1.wav"
-SWEP.Sound_Shoot_Silenced = path .. "fire_silenced-1.wav"
+SWEP.Sound_Shoot = "tacint_shark/weapons/an94/an-94_fire.wav"
+SWEP.Sound_Shoot_Silenced = path .. "suppressed_fire1.wav"
 
 SWEP.Vol_Shoot = 120
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
@@ -256,28 +256,30 @@ SWEP.AttachmentElements = {
 SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
-        Category = {"optic_cqb", "optic_medium", "optic_sniper"},
+        Category = {"optic_cqb", "optic_medium", "optic_sniper", "optic_ak"},
         Bone = "ValveBiped.AK47_rootbone",
         WMBone = "Box01",
         InstalledElements = {"tactical"},
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
-        VMScale = 0.75,
-        Pos_VM = Vector(-5.15, 0.15, 4),
+        VMScale = 0.8,
+        Pos_VM = Vector(-4.85, 0.05, 5.5),
         Ang_VM = Angle(90, 0, 0),
-        Pos_WM = Vector(0, 3, 0.5),
+        Pos_WM = Vector(-0.1, 5, 0-0.2),
         Ang_WM = Angle(0, -90, 0),
     },
     [2] = {
         PrintName = "Muzzle",
         Category = "silencer",
-        Bone = "ValveBiped.AK47_rootbone",
+        Bone = "ValveBiped.bolt",
         WMBone = "Box01",
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
-        Pos_VM = Vector(-3.2, 0.075, 27.6),
-        Pos_WM = Vector(0, 28, -1.75),
-        Ang_VM = Angle(90, 0, 0),
+		VMScale = 0.85,
+		WMScale = 0.85,
+        Pos_VM = Vector(-0, 21.75, -1.45),
+        Pos_WM = Vector(0, 29.5, -1.75),
+        Ang_VM = Angle(90, -90, -90),
         Ang_WM = Angle(0, -90, 0),
     },
     [3] = {
@@ -287,9 +289,9 @@ SWEP.Attachments = {
         WMBone = "Box01",
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
-        Pos_VM = Vector(-3.25, -0.1, 19),
-        Pos_WM = Vector(0, 19, -2),
-        Ang_VM = Angle(90, 0, -90),
+        Pos_VM = Vector(-2.25, -0, 22.25),
+        Pos_WM = Vector(-0.15, 22, -3),
+        Ang_VM = Angle(90, 0, 180),
         Ang_WM = Angle(0, -90, 180),
     },
     [4] = {
@@ -306,7 +308,7 @@ SWEP.Attachments = {
     },
     [6] = {
         PrintName = "Trigger",
-        Category = {"trigger_auto"},
+        Category = {"trigger_burst"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
@@ -333,7 +335,7 @@ local function addsound(name, spath)
     })
 end
 
-addsound("tacint_ak47.remove_clip", path .. "remove_clip.wav")
-addsound("tacint_ak47.insert_clip", path .. "insert_clip.wav")
-addsound("tacint_ak47.boltaction", path .. "boltaction.wav")
-addsound("tacint_ak47.Buttstock_Back", path .. "buttstock_back.wav")
+addsound("tacint_an94.remove_clip", path .. "magout_empty.wav")
+addsound("tacint_an94.insert_clip", path .. "magin.wav")
+addsound("tacint_an94.boltaction", path .. "cock.wav")
+addsound("tacint_an94.Buttstock_Back", "tacrp/weapons/ak47/ak47_buttstock_back.wav")
