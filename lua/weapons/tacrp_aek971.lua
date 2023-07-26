@@ -10,17 +10,17 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Special-production assault rifle based on the AK-74 that uses a unique recoil dampening mechanism to stabilize the weapon."
+SWEP.Description = "Experimental assault rifle based on the AK-74 that uses a unique recoil dampening mechanism to stabilize the weapon.  Low recoil but high spread."
 
-SWEP.ViewModel = "models/weapons/tacint/v_ak47.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_ak47.mdl"
+SWEP.ViewModel = "models/weapons/tacint_shark/v_aek.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_aek.mdl"
 
 SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 25,
-        Damage_Min = 15,
+        Damage_Max = 18,
+        Damage_Min = 10,
 
         RecoilKick = 2,
 
@@ -37,7 +37,7 @@ SWEP.BalanceStats = {
         Range_Min = 400,
         Range_Max = 2000,
 
-        RPM = 600,
+        RPM = 900,
 
         RecoilSpreadPenalty = 0.0025,
 
@@ -76,10 +76,10 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 20
-SWEP.Damage_Min = 14
-SWEP.Range_Min = 1200 // distance for which to maintain maximum damage
-SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
+SWEP.Damage_Max = 18
+SWEP.Damage_Min = 10
+SWEP.Range_Min = 1100 // distance for which to maintain maximum damage
+SWEP.Range_Max = 2500 // distance at which we drop to minimum damage
 SWEP.Penetration = 7 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.725
 
@@ -105,7 +105,7 @@ SWEP.Firemodes = {
 
 SWEP.RPM = 900
 
-SWEP.Spread = 0.003
+SWEP.Spread = 0.0075
 
 SWEP.ShootTimeMult = 0.5
 
@@ -115,26 +115,26 @@ SWEP.RecoilResetTime = 0.15
 SWEP.RecoilDissipationRate = 14
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 0.75
+SWEP.RecoilVisualKick = 0.25
 
 SWEP.RecoilKick = 4
 SWEP.RecoilStability = 0.35
 
-SWEP.RecoilSpreadPenalty = 0.002
-SWEP.HipFireSpreadPenalty = 0.03
+SWEP.RecoilSpreadPenalty = 0.008
+SWEP.HipFireSpreadPenalty = 0.045
 
 SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.925
+SWEP.MoveSpeedMult = 0.95
 SWEP.ShootingSpeedMult = 0.85
 SWEP.SightedSpeedMult = 0.65
 
 SWEP.ReloadSpeedMult = 0.5
 
-SWEP.AimDownSightsTime = 0.4
-SWEP.SprintToFireTime = 0.4
+SWEP.AimDownSightsTime = 0.3
+SWEP.SprintToFireTime = 0.35
 
 SWEP.Sway = 1.25
 SWEP.ScopedSway = 0.15
@@ -149,7 +149,7 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_SMG1
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(0, -2, -4)
+SWEP.PassivePos = Vector(0, -2.5, -5)
 
 SWEP.BlindFireAng = Angle(0, 5, 0)
 SWEP.BlindFirePos = Vector(3, -2, -5)
@@ -157,8 +157,8 @@ SWEP.BlindFirePos = Vector(3, -2, -5)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(0.05, 0, 0)
-SWEP.SightPos = Vector(-4.66, -7.5, -2.9)
+SWEP.SightAng = Angle(-0.05, 1.35, -0.5)
+SWEP.SightPos = Vector(-4.7, -7.5, -4)
 
 SWEP.CorrectivePos = Vector(0, 0, -0.05)
 SWEP.CorrectiveAng = Angle(0.75, 0.7, 0)
@@ -174,7 +174,7 @@ SWEP.Ammo = "smg1"
 
 SWEP.ReloadTimeMult = 1
 SWEP.DropMagazineModel = "models/weapons/tacint/magazines/ak47.mdl"
-SWEP.DropMagazineImpact = "metal"
+SWEP.DropMagazineImpact = "plastic"
 
 SWEP.ReloadUpInTime = 1.65
 SWEP.DropMagazineTime = 0.65
@@ -250,22 +250,35 @@ SWEP.AttachmentElements = {
             {2, 1}
         },
     },
+	["akmount"] = {
+        BGs_VM = {
+            {2, 0}
+        },
+        AttPosMods = {
+            [1] = {
+                Pos_VM = Vector(-5.5, 0.4, 1.5),
+                Pos_WM = Vector(-0.4, 2, 0.5),
+				VMScale = 1.2,
+            }
+        },
+        SortOrder = 2,
+    },
 }
 
 
 SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
-        Category = {"optic_cqb", "optic_medium", "optic_sniper"},
+        Category = {"optic_cqb", "optic_medium", "optic_sniper", "optic_ak"},
         Bone = "ValveBiped.AK47_rootbone",
         WMBone = "Box01",
         InstalledElements = {"tactical"},
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
         VMScale = 0.75,
-        Pos_VM = Vector(-5.15, 0.15, 4),
+        Pos_VM = Vector(-5.75, 0.2, 4),
         Ang_VM = Angle(90, 0, 0),
-        Pos_WM = Vector(0, 3, 0.5),
+        Pos_WM = Vector(0, 3, 0.6),
         Ang_WM = Angle(0, -90, 0),
     },
     [2] = {
@@ -275,8 +288,10 @@ SWEP.Attachments = {
         WMBone = "Box01",
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
-        Pos_VM = Vector(-3.2, 0.075, 27.6),
-        Pos_WM = Vector(0, 28, -1.75),
+		VMScale = 0.9,
+		WMScale = 0.9,
+        Pos_VM = Vector(-3.5, 0.075, 26.25),
+        Pos_WM = Vector(-.15, 24.5, -1.5),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),
     },
@@ -287,10 +302,10 @@ SWEP.Attachments = {
         WMBone = "Box01",
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
-        Pos_VM = Vector(-3.25, -0.1, 19),
-        Pos_WM = Vector(0, 19, -2),
+        Pos_VM = Vector(-4.5, -0.1, 19),
+        Pos_WM = Vector(0.2, 16, -0.5),
         Ang_VM = Angle(90, 0, -90),
-        Ang_WM = Angle(0, -90, 180),
+        Ang_WM = Angle(0, -90, -90),
     },
     [4] = {
         PrintName = "Accessory",
@@ -333,7 +348,7 @@ local function addsound(name, spath)
     })
 end
 
-addsound("tacint_ak47.remove_clip", path .. "remove_clip.wav")
-addsound("tacint_ak47.insert_clip", path .. "insert_clip.wav")
-addsound("tacint_ak47.boltaction", path .. "boltaction.wav")
-addsound("tacint_ak47.Buttstock_Back", path .. "buttstock_back.wav")
+addsound("tacint_aek.remove_clip", path .. "remove_clip.wav")
+addsound("tacint_aek.insert_clip", path .. "insert_clip.wav")
+addsound("tacint_aek.boltaction", path .. "boltaction.wav")
+addsound("tacint_aek.Buttstock_Back", path .. "buttstock_back.wav")
