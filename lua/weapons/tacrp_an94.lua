@@ -174,7 +174,7 @@ SWEP.Ammo = "smg1"
 
 SWEP.ReloadTimeMult = 1.05
 SWEP.DropMagazineModel = "models/weapons/tacint/magazines/ak47.mdl"
-SWEP.DropMagazineImpact = "metal"
+SWEP.DropMagazineImpact = "plastic"
 
 SWEP.ReloadUpInTime = 1.65
 SWEP.DropMagazineTime = 0.65
@@ -256,7 +256,7 @@ SWEP.AttachmentElements = {
 SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
-        Category = {"optic_cqb", "optic_medium", "optic_sniper", "optic_ak"},
+        Category = {"optic_cqb", "optic_medium", "optic_sniper"}, --no PSO because no dovetail mount :(
         Bone = "ValveBiped.AK47_rootbone",
         WMBone = "Box01",
         InstalledElements = {"tactical"},
