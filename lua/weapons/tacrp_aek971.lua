@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Experimental assault rifle based on the AK-74 that uses a unique recoil dampening mechanism to stabilize the weapon.  Low recoil but high spread."
+SWEP.Description = "Experimental assault rifle based on the AK-74 that uses a unique recoil dampening mechanism to stabilize the weapon. Low recoil but medicore precision."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_aek.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_aek.mdl"
@@ -105,23 +105,23 @@ SWEP.Firemodes = {
 
 SWEP.RPM = 900
 
-SWEP.Spread = 0.0075
+SWEP.Spread = 0.0085
 
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
 SWEP.RecoilMaximum = 12
-SWEP.RecoilResetTime = 0.15
-SWEP.RecoilDissipationRate = 14
-SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
+SWEP.RecoilResetTime = 0.12
+SWEP.RecoilDissipationRate = 12
+SWEP.RecoilFirstShotMult = 2 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 0.25
+SWEP.RecoilVisualKick = 0.5
 
 SWEP.RecoilKick = 4
-SWEP.RecoilStability = 0.35
+SWEP.RecoilStability = 0.5
 
-SWEP.RecoilSpreadPenalty = 0.008
-SWEP.HipFireSpreadPenalty = 0.045
+SWEP.RecoilSpreadPenalty = 0.0025
+SWEP.HipFireSpreadPenalty = 0.04
 
 SWEP.CanBlindFire = true
 

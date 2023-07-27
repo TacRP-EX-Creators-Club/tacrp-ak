@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Derivative of the AK design with balanced characteristics and great armor penetration."
+SWEP.Description = "Finnish derivative of the AK design with balanced performance and greater armor penetration."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_rk95.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_rk95.mdl"
@@ -19,10 +19,8 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 25,
-        Damage_Min = 15,
-
-        RecoilKick = 2,
+        Damage_Max = 27,
+        Damage_Min = 20,
 
         MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.75,
@@ -76,17 +74,18 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 20
-SWEP.Damage_Min = 14
+SWEP.Damage_Max = 25
+SWEP.Damage_Min = 18
 SWEP.Range_Min = 1200 // distance for which to maintain maximum damage
 SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
 SWEP.Penetration = 7 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.725
+SWEP.ArmorPenetration = 0.875
+SWEP.ArmorBonus = 2
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 5,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1.25,
+    [HITGROUP_STOMACH] = 1.15,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
     [HITGROUP_LEFTLEG] = 0.85,
@@ -94,7 +93,7 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.9
 }
 
-SWEP.MuzzleVelocity = 25000
+SWEP.MuzzleVelocity = 27000
 
 // misc. shooting
 
@@ -103,24 +102,24 @@ SWEP.Firemodes = {
     1
 }
 
-SWEP.RPM = 650
+SWEP.RPM = 600
 
-SWEP.Spread = 0.003
+SWEP.Spread = 0.004
 
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 12
+SWEP.RecoilMaximum = 16
 SWEP.RecoilResetTime = 0.15
-SWEP.RecoilDissipationRate = 14
+SWEP.RecoilDissipationRate = 20
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 0.75
+SWEP.RecoilVisualKick = 1.5
 
 SWEP.RecoilKick = 4
-SWEP.RecoilStability = 0.35
+SWEP.RecoilStability = 0.4
 
-SWEP.RecoilSpreadPenalty = 0.002
+SWEP.RecoilSpreadPenalty = 0.0028
 SWEP.HipFireSpreadPenalty = 0.03
 
 SWEP.CanBlindFire = true
@@ -170,7 +169,7 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 
 
 SWEP.ClipSize = 30
-SWEP.Ammo = "smg1"
+SWEP.Ammo = "ar2"
 
 SWEP.ReloadTimeMult = 1
 SWEP.DropMagazineModel = "models/weapons/tacint/magazines/ak47.mdl"

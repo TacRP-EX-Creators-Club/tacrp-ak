@@ -33,11 +33,8 @@ SWEP.BalanceStats = {
     [TacRP.BALANCE_TTT] = {
         Damage_Max = 16,
         Damage_Min = 11,
-
         Range_Min = 400,
         Range_Max = 2000,
-
-        RPM = 1000,
 
         RecoilSpreadPenalty = 0.0025,
 
@@ -76,10 +73,10 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 17
-SWEP.Damage_Min = 12
+SWEP.Damage_Max = 24
+SWEP.Damage_Min = 15
 SWEP.Range_Min = 1350 // distance for which to maintain maximum damage
-SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
+SWEP.Range_Max = 4000 // distance at which we drop to minimum damage
 SWEP.Penetration = 7 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.725
 
@@ -100,12 +97,14 @@ SWEP.MuzzleVelocity = 25000
 
 SWEP.Firemodes = {
     -2,
+    2,
     1
 }
 
-SWEP.RPM = 1800
+SWEP.RPM = 600
+SWEP.RPMMultBurst = 3
 
-SWEP.PostBurstDelay = 0.3
+SWEP.PostBurstDelay = 0.25
 SWEP.RunawayBurst = true
 
 SWEP.Spread = 0.005
@@ -113,17 +112,16 @@ SWEP.Spread = 0.005
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 12
-SWEP.RecoilResetTime = 0.15
+SWEP.RecoilMaximum = 10
+SWEP.RecoilResetTime = 0.175
 SWEP.RecoilDissipationRate = 14
 SWEP.RecoilFirstShotMult = 0.5 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
+SWEP.RecoilKick = 5.5
+SWEP.RecoilStability = 0.3
 
-SWEP.RecoilKick = 5
-SWEP.RecoilStability = 0.35
-
-SWEP.RecoilSpreadPenalty = 0.005
+SWEP.RecoilSpreadPenalty = 0.0055
 SWEP.HipFireSpreadPenalty = 0.035
 
 SWEP.CanBlindFire = true
@@ -136,7 +134,7 @@ SWEP.SightedSpeedMult = 0.5
 
 SWEP.ReloadSpeedMult = 0.5
 
-SWEP.AimDownSightsTime = 0.4
+SWEP.AimDownSightsTime = 0.42
 SWEP.SprintToFireTime = 0.45
 
 SWEP.Sway = 1.3
