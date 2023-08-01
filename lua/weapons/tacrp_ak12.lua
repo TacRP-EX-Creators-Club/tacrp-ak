@@ -10,19 +10,19 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Modern iteration of the Kalashnikov design, featuring enhanced ergonomics and the ability to quickly swap the weapon's caliber."
+SWEP.Description = "One of many attempts at modernizing the Kalashnikov.\nWell-rounded with controllable recoil, and capable of swapping calibers easily."
 
-SWEP.ViewModel = "models/weapons/tacint/v_ak47.mdl"
+SWEP.ViewModel = "models/weapons/tacint_extras/v_ak12.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_ak47.mdl"
 
 SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 25,
-        Damage_Min = 15,
+        Damage_Max = 24,
+        Damage_Min = 18,
 
-        RecoilKick = 2,
+        RecoilKick = 4,
 
         MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.75,
@@ -31,13 +31,10 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 16,
-        Damage_Min = 11,
-
-        Range_Min = 400,
-        Range_Max = 2000,
-
-        RPM = 600,
+        Damage_Max = 15,
+        Damage_Min = 12,
+        Range_Min = 600,
+        Range_Max = 2500,
 
         RecoilSpreadPenalty = 0.0025,
 
@@ -78,10 +75,10 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 SWEP.Damage_Max = 20
 SWEP.Damage_Min = 14
-SWEP.Range_Min = 1200 // distance for which to maintain maximum damage
-SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
-SWEP.Penetration = 7 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.725
+SWEP.Range_Min = 1500 // distance for which to maintain maximum damage
+SWEP.Range_Max = 4000 // distance at which we drop to minimum damage
+SWEP.Penetration = 6 // units of metal this weapon can penetrate
+SWEP.ArmorPenetration = 0.7
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 5,
@@ -105,22 +102,22 @@ SWEP.Firemodes = {
 
 SWEP.RPM = 700
 
-SWEP.Spread = 0.003
+SWEP.Spread = 0.004
 
-SWEP.ShootTimeMult = 0.5
+SWEP.ShootTimeMult = 0.6
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 12
-SWEP.RecoilResetTime = 0.15
+SWEP.RecoilMaximum = 13
+SWEP.RecoilResetTime = 0.13
 SWEP.RecoilDissipationRate = 14
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 0.75
+SWEP.RecoilVisualKick = 1
 
-SWEP.RecoilKick = 4
-SWEP.RecoilStability = 0.35
+SWEP.RecoilKick = 3.5
+SWEP.RecoilStability = 0.45
 
-SWEP.RecoilSpreadPenalty = 0.002
+SWEP.RecoilSpreadPenalty = 0.0014
 SWEP.HipFireSpreadPenalty = 0.03
 
 SWEP.CanBlindFire = true
@@ -133,7 +130,7 @@ SWEP.SightedSpeedMult = 0.65
 
 SWEP.ReloadSpeedMult = 0.5
 
-SWEP.AimDownSightsTime = 0.4
+SWEP.AimDownSightsTime = 0.37
 SWEP.SprintToFireTime = 0.4
 
 SWEP.Sway = 1.25
@@ -149,7 +146,7 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_SMG1
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(0, -2, -4)
+SWEP.PassivePos = Vector(0, -3, -5)
 
 SWEP.BlindFireAng = Angle(0, 5, 0)
 SWEP.BlindFirePos = Vector(3, -2, -5)
@@ -157,11 +154,11 @@ SWEP.BlindFirePos = Vector(3, -2, -5)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(0.05, 0, 0)
-SWEP.SightPos = Vector(-4.66, -7.5, -2.9)
+SWEP.SightAng = Angle(-0.25, 0, -1)
+SWEP.SightPos = Vector(-4.48, -7, -3.55)
 
-SWEP.CorrectivePos = Vector(0, 0, -0.05)
-SWEP.CorrectiveAng = Angle(0.75, 0.7, 0)
+SWEP.CorrectivePos = Vector(0.05, 0, 0.05)
+SWEP.CorrectiveAng = Angle(0.64, 0.1, 0)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_BACK
@@ -172,20 +169,21 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 SWEP.ClipSize = 30
 SWEP.Ammo = "smg1"
 
-SWEP.ReloadTimeMult = 1
+SWEP.ReloadTimeMult = 0.95
 SWEP.DropMagazineModel = "models/weapons/tacint/magazines/ak47.mdl"
 SWEP.DropMagazineImpact = "metal"
 
-SWEP.ReloadUpInTime = 1.65
-SWEP.DropMagazineTime = 0.65
+SWEP.ReloadUpInTime = 1.35
+SWEP.DropMagazineTime = 0.45
 
-SWEP.FreeAimMaxAngle = 4.5
+SWEP.FreeAimMaxAngle = 4
 
 // sounds
 
 local path = "tacrp/weapons/ak47/ak47_"
+local path1 = "tacint_extras/ak12/"
 
-SWEP.Sound_Shoot = "^" .. path .. "fire-1.wav"
+SWEP.Sound_Shoot = "^" .. path1 .. "ak12-1.wav"
 SWEP.Sound_Shoot_Silenced = path .. "fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 120
@@ -228,11 +226,27 @@ SWEP.AnimationTranslationTable = {
     ["fire1"] = "fire1_M",
     ["fire2"] = "fire2_M",
     ["fire3"] = "fire3_M",
-    ["fire4"] = "fire4_M",
-    ["fire5"] = "fire5_M",
+    ["fire4"] = "fire3_M",
+    ["fire5"] = "fire3_M",
     ["melee"] = {"melee1", "melee2"},
     ["jam"] = "mid_reload"
 }
+
+SWEP.ProceduralIronFire = {
+    vm_pos = Vector(0, -0.1, -0.1),
+    vm_ang = Angle(0, 0.1, 0),
+    t = 0.15,
+    tmax = 0.15,
+    bones = {
+        {
+            bone = "ValveBiped.bolt_cover",
+            pos = Vector(0, 0, -3),
+            t0 = 0.02,
+            t1 = 0.12,
+        },
+    },
+}
+
 
 // attachments
 
@@ -245,7 +259,7 @@ SWEP.AttachmentElements = {
             {1, 1}
         }
     },
-    ["tactical"] = {
+    ["sight"] = {
         BGs_VM = {
             {2, 1}
         },
@@ -257,37 +271,39 @@ SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
         Category = {"optic_cqb", "optic_medium", "optic_sniper"},
-        Bone = "ValveBiped.AK47_rootbone",
+        Bone = "ValveBiped._ROOT_AMD65",
         WMBone = "Box01",
-        InstalledElements = {"tactical"},
-        AttachSound = "tacrp/weapons/optic_on.wav",
-        DetachSound = "tacrp/weapons/optic_off.wav",
-        VMScale = 0.75,
-        Pos_VM = Vector(-5.15, 0.15, 4),
-        Ang_VM = Angle(90, 0, 0),
+        InstalledElements = {"sight"},
+        AttachSound = "TacRP/weapons/optic_on.wav",
+        DetachSound = "TacRP/weapons/optic_off.wav",
+        VMScale = 0.85,
+        Pos_VM = Vector(-4.5, 0.225, 3.5),
         Pos_WM = Vector(0, 3, 0.5),
+        Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),
     },
     [2] = {
         PrintName = "Muzzle",
         Category = "silencer",
-        Bone = "ValveBiped.AK47_rootbone",
+        Bone = "ValveBiped._ROOT_AMD65",
         WMBone = "Box01",
-        AttachSound = "tacrp/weapons/silencer_on.wav",
-        DetachSound = "tacrp/weapons/silencer_off.wav",
-        Pos_VM = Vector(-3.2, 0.075, 27.6),
-        Pos_WM = Vector(0, 28, -1.75),
+        VMScale = 0.9,
+        AttachSound = "TacRP/weapons/silencer_on.wav",
+        DetachSound = "TacRP/weapons/silencer_off.wav",
+        Pos_VM = Vector(-2.4, 0.25, 30),
+        Pos_WM = Vector(0, 24.5, -1.25),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),
     },
     [3] = {
         PrintName = "Tactical",
         Category = "tactical",
-        Bone = "ValveBiped.AK47_rootbone",
+        Bone = "ValveBiped._ROOT_AMD65",
         WMBone = "Box01",
-        AttachSound = "tacrp/weapons/flashlight_on.wav",
-        DetachSound = "tacrp/weapons/flashlight_off.wav",
-        Pos_VM = Vector(-3.25, -0.1, 19),
+        InstalledElements = {"tactical"},
+        AttachSound = "TacRP/weapons/flashlight_on.wav",
+        DetachSound = "TacRP/weapons/flashlight_off.wav",
+        Pos_VM = Vector(-2.5, -0.5, 15.5),
         Pos_WM = Vector(0, 19, -2),
         Ang_VM = Angle(90, 0, -90),
         Ang_WM = Angle(0, -90, 180),
@@ -312,7 +328,7 @@ SWEP.Attachments = {
     },
     [7] = {
         PrintName = "Ammo",
-        Category = {"ammo_rifle"},
+        Category = {"ammo_rifle", "ammo_ak12"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
@@ -333,7 +349,9 @@ local function addsound(name, spath)
     })
 end
 
-addsound("tacint_ak47.remove_clip", path .. "remove_clip.wav")
-addsound("tacint_ak47.insert_clip", path .. "insert_clip.wav")
-addsound("tacint_ak47.boltaction", path .. "boltaction.wav")
-addsound("tacint_ak47.Buttstock_Back", path .. "buttstock_back.wav")
+addsound("tacint_ak12.remove_clip", "TacRP/weapons/ak47/ak47_remove_clip.wav")
+addsound("tacint_ak12.insert_clip", "TacRP/weapons/ak47/ak47_insert_clip.wav")
+addsound("tacint_ak12.Bolt_Back", path1 .. "ak12_reload.wav")
+addsound("tacint_ak12.Bolt_Release", "common/null.wav")
+addsound("tacint_ak12.Rifle_catch", path .. "rifle_catch.wav")
+addsound("tacint_ak12.Buttstock_Lockback", path1 .. "ak12_draw.wav")
