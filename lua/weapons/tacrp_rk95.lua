@@ -109,17 +109,16 @@ SWEP.Spread = 0.004
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 16
+SWEP.RecoilMaximum = 14
 SWEP.RecoilResetTime = 0.15
-SWEP.RecoilDissipationRate = 20
+SWEP.RecoilDissipationRate = 18
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1.5
-
-SWEP.RecoilKick = 4
+SWEP.RecoilKick = 5
 SWEP.RecoilStability = 0.4
 
-SWEP.RecoilSpreadPenalty = 0.0028
+SWEP.RecoilSpreadPenalty = 0.0032
 SWEP.HipFireSpreadPenalty = 0.03
 
 SWEP.CanBlindFire = true
@@ -214,6 +213,21 @@ SWEP.AnimationTranslationTable = {
     ["jam"] = "mid_reload"
 }
 
+SWEP.ProceduralIronFire = {
+    vm_pos = Vector(0, -0.5, -0.3),
+    vm_ang = Angle(0, 0.65, 0),
+    t = 0.2,
+    tmax = 0.2,
+    bones = {
+        {
+            bone = "ValveBiped.bolt",
+            pos = Vector(0, 0, -3),
+            t0 = 0.01,
+            t1 = 0.15,
+        },
+    },
+}
+
 // attachments
 
 SWEP.AttachmentElements = {
@@ -229,11 +243,11 @@ SWEP.AttachmentElements = {
         BGs_VM = {
             {2, 1}
         },
-		BGs_WM = {
-			{2, 1}
-		},
+        BGs_WM = {
+            {2, 1}
+        },
     },
-	["akmount"] = {
+    ["akmount"] = {
         BGs_VM = {
             {2, 0}
         },
@@ -241,7 +255,7 @@ SWEP.AttachmentElements = {
             [1] = {
                 Pos_VM = Vector(-5.5, 0.4, 4),
                 Pos_WM = Vector(-0.4, 2, 0.5),
-				VMScale = 1.2,
+                VMScale = 1.2,
             }
         },
         SortOrder = 2,
@@ -271,8 +285,8 @@ SWEP.Attachments = {
         WMBone = "Box01",
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
-		VMScale = 0.95,
-		WMScale = 0.95,
+        VMScale = 0.95,
+        WMScale = 0.95,
         Pos_VM = Vector(-3.5, 0.2, 27.6),
         Pos_WM = Vector(-0.05, 27, -2),
         Ang_VM = Angle(90, 0, 0),
