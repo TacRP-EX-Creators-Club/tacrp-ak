@@ -13,7 +13,7 @@ SWEP.SubCatType = "4Assault Rifle"
 SWEP.Description = "One of many attempts at modernizing the Kalashnikov.\nWell-rounded with controllable recoil, and capable of swapping calibers easily."
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_ak12.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_ak47.mdl"
+SWEP.WorldModel = "models/weapons/tacint_extras/w_ak12.mdl"
 
 SWEP.Slot = 2
 
@@ -140,7 +140,7 @@ SWEP.ScopedSway = 0.15
 
 // hold types
 
-SWEP.HoldType = "ar2"
+SWEP.HoldType = "smg"
 SWEP.HoldTypeSprint = "passive"
 SWEP.HoldTypeBlindFire = false
 
@@ -159,7 +159,7 @@ SWEP.SprintPos = Vector(5, 0, -2)
 SWEP.SightAng = Angle(-0.25, 0, -1)
 SWEP.SightPos = Vector(-4.48, -7, -3.55)
 
-SWEP.CorrectivePos = Vector(0.05, 0, 0.05)
+SWEP.CorrectivePos = Vector(0.03, 0, 0.06)
 SWEP.CorrectiveAng = Angle(0.64, 0.1, 0)
 
 SWEP.HolsterVisible = true
@@ -173,7 +173,7 @@ SWEP.Ammo = "smg1"
 
 SWEP.ReloadTimeMult = 0.95
 SWEP.DropMagazineModel = "models/weapons/tacint/magazines/ak47.mdl"
-SWEP.DropMagazineImpact = "metal"
+SWEP.DropMagazineImpact = "plastic"
 
 SWEP.ReloadUpInTime = 1.35
 SWEP.DropMagazineTime = 0.45
@@ -261,7 +261,7 @@ SWEP.Attachments = {
         DetachSound = "TacRP/weapons/optic_off.wav",
         VMScale = 0.85,
         Pos_VM = Vector(-4.5, 0.225, 3.5),
-        Pos_WM = Vector(0, 3, 0.5),
+        Pos_WM = Vector(0, 4, 0.5),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),
     },
@@ -274,7 +274,7 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/silencer_on.wav",
         DetachSound = "TacRP/weapons/silencer_off.wav",
         Pos_VM = Vector(-2.4, 0.25, 30),
-        Pos_WM = Vector(0, 24.5, -1.25),
+        Pos_WM = Vector(0, 27.5, -1.5),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),
     },
@@ -287,9 +287,9 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
         Pos_VM = Vector(-2.5, -0.5, 15.5),
-        Pos_WM = Vector(0, 19, -2),
+        Pos_WM = Vector(0.65, 14, -1.5),
         Ang_VM = Angle(90, 0, -90),
-        Ang_WM = Angle(0, -90, 180),
+        Ang_WM = Angle(0, -90, -90),
     },
     [4] = {
         PrintName = "Accessory",
