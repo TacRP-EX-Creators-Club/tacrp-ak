@@ -1,7 +1,7 @@
 ATT.PrintName = "7.62x39mm"
 ATT.FullName = "AK-12 7.62x39mm Mod Kit"
 
-ATT.Icon = Material("entities/tacrp_att_acc_tmj.png", "mips smooth")
+ATT.Icon = Material("entities/tacrp_att_ammo_ak12_762.png", "mips smooth")
 ATT.Description = "Load a more powerful cartridge, increasing both damage and recoil."
 ATT.Pros = {"stat.damage", "att.procon.armor"}
 ATT.Cons = {"stat.rpm", "stat.recoil", "stat.range"}
