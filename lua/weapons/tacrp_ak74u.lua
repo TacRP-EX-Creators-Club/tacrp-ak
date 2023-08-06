@@ -13,7 +13,7 @@ SWEP.SubCatType = "4Assault Rifle"
 SWEP.Description = "Carbine configuration of the AK-74, designed for Soviet tank crews.  Exceptional handling but a fast rate of fire makes it difficult to control."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_74u.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_ak47.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_74u.mdl"
 
 SWEP.Slot = 2
 
@@ -173,7 +173,7 @@ SWEP.ClipSize = 30
 SWEP.Ammo = "smg1"
 
 SWEP.ReloadTimeMult = 1
-SWEP.DropMagazineModel = "models/weapons/tacint/magazines/ak47.mdl"
+SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/74u.mdl"
 SWEP.DropMagazineImpact = "plastic"
 
 SWEP.ReloadUpInTime = 1.65
@@ -230,15 +230,21 @@ SWEP.AttachmentElements = {
         BGs_VM = {
             {2, 1}
         },
+		BGs_WM = {
+            {2, 1}
+        },
     },
 	["akmount"] = {
         BGs_VM = {
             {2, 0}
         },
+		BGs_WM = {
+            {2, 0}
+        },
         AttPosMods = {
             [1] = {
                 Pos_VM = Vector(-4.9, 0.3, 1.5),
-                Pos_WM = Vector(-0.4, 2, 0.5),
+                Pos_WM = Vector(-0.1, -1, 0.5),
                 VMScale = 1.2,
             }
         },
@@ -259,7 +265,7 @@ SWEP.Attachments = {
         VMScale = 0.75,
         Pos_VM = Vector(-5.7, 0.25, 3),
         Ang_VM = Angle(90, 0, 0),
-        Pos_WM = Vector(0, 3, 0.5),
+        Pos_WM = Vector(0.05, 2.5, 1.2),
         Ang_WM = Angle(0, -90, 0),
     },
     [2] = {
@@ -270,7 +276,7 @@ SWEP.Attachments = {
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
         Pos_VM = Vector(-3.25, 0.1, 20.5),
-        Pos_WM = Vector(0, 28, -1.75),
+        Pos_WM = Vector(0, 19.25, -1.5),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),
     },
@@ -282,9 +288,9 @@ SWEP.Attachments = {
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
         Pos_VM = Vector(-4.25, 0.6, 12),
-        Pos_WM = Vector(0, 19, -2),
+        Pos_WM = Vector(-0.4, 10, -0.5),
         Ang_VM = Angle(90, 0, 75),
-        Ang_WM = Angle(0, -90, 180),
+        Ang_WM = Angle(0, -90, 75),
     },
     [4] = {
         PrintName = "Accessory",
