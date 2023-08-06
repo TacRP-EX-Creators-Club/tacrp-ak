@@ -231,11 +231,11 @@ SWEP.AttachmentElements = {
         BGs_VM = {
             {2, 1}
         },
-		BGs_WM = {
+        BGs_WM = {
             {2, 1}
         },
     },
-	["akmount"] = {
+    ["akmount"] = {
         BGs_VM = {
             {2, 0}
         },
@@ -243,10 +243,25 @@ SWEP.AttachmentElements = {
             [1] = {
                 Pos_VM = Vector(-5, 0.4, 3),
                 Pos_WM = Vector(-0.4, 2, 0.5),
-				VMScale = 1.2,
+                VMScale = 1.2,
             }
         },
         SortOrder = 2,
+    },
+}
+
+SWEP.ProceduralIronFire = {
+    vm_pos = Vector(0, -0.5, -0.2),
+    vm_ang = Angle(0, 0.25, 0),
+    t = 0.25,
+    tmax = 0.25,
+    bones = {
+        {
+            bone = "ValveBiped.bolt",
+            pos = Vector(0, 0, -3),
+            t0 = 0.01,
+            t1 = 0.12,
+        },
     },
 }
 
@@ -273,8 +288,8 @@ SWEP.Attachments = {
         WMBone = "Box01",
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
-		VMScale = 0.85,
-		WMScale = 0.85,
+        VMScale = 0.85,
+        WMScale = 0.85,
         Pos_VM = Vector(-0, 21.75, -1.45),
         Pos_WM = Vector(0, 29.5, -1.75),
         Ang_VM = Angle(90, -90, -90),
