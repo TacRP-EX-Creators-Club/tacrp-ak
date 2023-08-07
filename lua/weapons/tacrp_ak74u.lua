@@ -19,27 +19,21 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 25,
-        Damage_Min = 15,
+        Damage_Max = 24,
+        Damage_Min = 12,
 
-        RecoilKick = 2,
-
-        MoveSpeedMult = 0.85,
-        ShootingSpeedMult = 0.75,
-        SightedSpeedMult = 0.75,
+        MoveSpeedMult = 0.88,
+        ShootingSpeedMult = 0.8,
+        SightedSpeedMult = 0.85,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 16,
-        Damage_Min = 11,
+        Damage_Max = 12,
+        Damage_Min = 7,
 
-        Range_Min = 400,
-        Range_Max = 2000,
-
-        RPM = 600,
-
-        RecoilSpreadPenalty = 0.0025,
+        Range_Min = 350,
+        Range_Max = 1800,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 2.5,
@@ -54,19 +48,19 @@ SWEP.BalanceStats = {
 
         ReloadTimeMult = 1.25,
 
-        MoveSpeedMult = 0.9,
+        MoveSpeedMult = 0.925,
         ShootingSpeedMult = 0.8,
         MeleeSpeedMult = 1,
         SightedSpeedMult = 0.55,
-        ReloadSpeedMult = 0.65,
+        ReloadSpeedMult = 0.75,
     },
     [TacRP.BALANCE_PVE] = {
         Damage_Max = 8,
         Damage_Min = 4,
 
-        MoveSpeedMult = 0.85,
-        ShootingSpeedMult = 0.75,
-        SightedSpeedMult = 0.75,
+        MoveSpeedMult = 0.88,
+        ShootingSpeedMult = 0.8,
+        SightedSpeedMult = 0.85,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
@@ -77,16 +71,16 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 // "ballistics"
 
 SWEP.Damage_Max = 20
-SWEP.Damage_Min = 14
-SWEP.Range_Min = 1200 // distance for which to maintain maximum damage
-SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
+SWEP.Damage_Min = 11
+SWEP.Range_Min = 1400 // distance for which to maintain maximum damage
+SWEP.Range_Max = 2800 // distance at which we drop to minimum damage
 SWEP.Penetration = 7 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.725
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 5,
+    [HITGROUP_HEAD] = 4,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1.25,
+    [HITGROUP_STOMACH] = 1.15,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
     [HITGROUP_LEFTLEG] = 0.85,
@@ -94,7 +88,7 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.9
 }
 
-SWEP.MuzzleVelocity = 25000
+SWEP.MuzzleVelocity = 22000
 
 // misc. shooting
 
@@ -105,39 +99,38 @@ SWEP.Firemodes = {
 
 SWEP.RPM = 720
 
-SWEP.Spread = 0.003
+SWEP.Spread = 0.01
 
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
 SWEP.RecoilMaximum = 12
-SWEP.RecoilResetTime = 0.15
-SWEP.RecoilDissipationRate = 14
+SWEP.RecoilResetTime = 0.14
+SWEP.RecoilDissipationRate = 15
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 0.75
+SWEP.RecoilVisualKick = 1
+SWEP.RecoilKick = 5
+SWEP.RecoilStability = 0.25
 
-SWEP.RecoilKick = 4
-SWEP.RecoilStability = 0.35
-
-SWEP.RecoilSpreadPenalty = 0.002
-SWEP.HipFireSpreadPenalty = 0.03
+SWEP.RecoilSpreadPenalty = 0.0028
+SWEP.HipFireSpreadPenalty = 0.022
 
 SWEP.CanBlindFire = true
 
 // handling
 
 SWEP.MoveSpeedMult = 0.925
-SWEP.ShootingSpeedMult = 0.85
-SWEP.SightedSpeedMult = 0.65
+SWEP.ShootingSpeedMult = 0.8
+SWEP.SightedSpeedMult = 0.7
 
 SWEP.ReloadSpeedMult = 0.5
 
-SWEP.AimDownSightsTime = 0.4
-SWEP.SprintToFireTime = 0.4
+SWEP.AimDownSightsTime = 0.33
+SWEP.SprintToFireTime = 0.35
 
-SWEP.Sway = 1.25
-SWEP.ScopedSway = 0.15
+SWEP.Sway = 1
+SWEP.ScopedSway = 0.175
 
 // hold types
 
@@ -168,26 +161,29 @@ SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_BACK
 SWEP.HolsterPos = Vector(5, -2, -6)
 SWEP.HolsterAng = Angle(0, 0, 0)
 
+SWEP.DeployTimeMult = 0.9
 
 SWEP.ClipSize = 30
 SWEP.Ammo = "smg1"
 
-SWEP.ReloadTimeMult = 1
+SWEP.ReloadTimeMult = 0.95
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/74u.mdl"
 SWEP.DropMagazineImpact = "plastic"
 
 SWEP.ReloadUpInTime = 1.65
 SWEP.DropMagazineTime = 0.65
 
-SWEP.FreeAimMaxAngle = 4.5
+SWEP.FreeAimMaxAngle = 3.5
 
 // sounds
 
 local path = "tacrp/weapons/ak47/ak47_"
+local path1 = "tacint_shark/weapons/ak74u/"
 
-SWEP.Sound_Shoot = "^" .. path .. "fire-1.wav"
-SWEP.Sound_Shoot_Silenced = path .. "fire_silenced-1.wav"
+SWEP.Sound_Shoot = "^" .. path1 .. "ak47-1.wav"
+SWEP.Sound_Shoot_Silenced = path1 .. "g3sg1-1.wav"
 
+SWEP.Pitch_Shoot = 105
 SWEP.Vol_Shoot = 120
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 
@@ -230,15 +226,15 @@ SWEP.AttachmentElements = {
         BGs_VM = {
             {2, 1}
         },
-		BGs_WM = {
+        BGs_WM = {
             {2, 1}
         },
     },
-	["akmount"] = {
+    ["akmount"] = {
         BGs_VM = {
             {2, 0}
         },
-		BGs_WM = {
+        BGs_WM = {
             {2, 0}
         },
         AttPosMods = {
@@ -252,6 +248,20 @@ SWEP.AttachmentElements = {
     },
 }
 
+SWEP.ProceduralIronFire = {
+    vm_pos = Vector(0, -0.4, -0.2),
+    vm_ang = Angle(0, 0.5, 0),
+    t = 0.2,
+    tmax = 0.2,
+    bones = {
+        {
+            bone = "ValveBiped.bolt",
+            pos = Vector(0, 0, -3),
+            t0 = 0.01,
+            t1 = 0.15,
+        },
+    },
+}
 
 SWEP.Attachments = {
     [1] = {
@@ -333,7 +343,7 @@ local function addsound(name, spath)
     })
 end
 
-addsound("tacint_74u.remove_clip", path .. "remove_clip.wav")
-addsound("tacint_74u.insert_clip", path .. "insert_clip.wav")
+addsound("tacint_74u.remove_clip", path1 .. "clipout.wav")
+addsound("tacint_74u.insert_clip", path1 .. "clipin.wav")
 addsound("tacint_74u.boltaction", path .. "boltaction.wav")
 addsound("tacint_74u.Buttstock_Back", path .. "buttstock_back.wav")
