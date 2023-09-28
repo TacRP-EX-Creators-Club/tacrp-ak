@@ -4,13 +4,13 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "SVD Dragunov"
+SWEP.PrintName = "SVD"
 SWEP.Category = "Tactical RP" // "Tactical RP (Extras)"
 
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "6Precision Rifle"
 
-SWEP.Description = "Russian marksman rifle with low fire rate but great range and damage.\nWhile superficially resembling the AK design, it is completely unrelated mechanics wise."
+SWEP.Description = "Russian marksman rifle with low fire rate but great range and damage.\nWhile superficially resembling the AK design, it is completely unrelated mechanically."
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_svd.mdl"
 SWEP.WorldModel = "models/weapons/tacint_extras/w_ak47.mdl"
