@@ -13,7 +13,7 @@ SWEP.SubCatType = "6Precision Rifle"
 SWEP.Description = "Russian marksman rifle with low fire rate but great range and damage.\nWhile superficially resembling the AK design, it is completely unrelated mechanically."
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_svd.mdl"
-SWEP.WorldModel = "models/weapons/tacint_extras/w_ak47.mdl"
+SWEP.WorldModel = "models/weapons/tacint_extras/w_svd.mdl"
 
 SWEP.Slot = 2
 
@@ -258,7 +258,7 @@ SWEP.Attachments = {
         VMScale = 0.9,
         Pos_VM = Vector(-5.9, 0.24, 5.5),
         Ang_VM = Angle(90, 0, 0),
-        Pos_WM = Vector(0, 3, 0.5),
+        Pos_WM = Vector(0, 5, 1.25),
         Ang_WM = Angle(0, -90, 0),
     },
     [2] = {
@@ -270,7 +270,7 @@ SWEP.Attachments = {
         DetachSound = "tacrp/weapons/silencer_off.wav",
         VMScale = 0.9,
         Pos_VM = Vector(-3.6, 0.24, 39.2),
-        Pos_WM = Vector(0, 28, -1.75),
+        Pos_WM = Vector(0, 44, -1.5),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),
     },
@@ -282,9 +282,9 @@ SWEP.Attachments = {
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
         Pos_VM = Vector(-3.25, -0.1, 19),
-        Pos_WM = Vector(0, 19, -2),
+        Pos_WM = Vector(0.3, 20, -1.5),
         Ang_VM = Angle(90, 0, -90),
-        Ang_WM = Angle(0, -90, 180),
+        Ang_WM = Angle(0, -90, -90),
     },
     [4] = {
         PrintName = "Accessory",
