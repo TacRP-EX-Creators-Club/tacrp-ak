@@ -170,7 +170,7 @@ SWEP.ClipSize = 10
 SWEP.Ammo = "ar2"
 
 SWEP.ReloadTimeMult = 1
-SWEP.DropMagazineModel = "models/weapons/tacint_extras/magazines/ak47.mdl"
+SWEP.DropMagazineModel = "models/weapons/tacint_extras/magazines/svd.mdl"
 SWEP.DropMagazineImpact = "metal"
 
 SWEP.ReloadUpInTime = 1.65
