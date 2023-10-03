@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Experimental assault rifle based on the AK-74 that uses a unique recoil dampening mechanism to stabilize the weapon. Low recoil but medicore precision."
+SWEP.Description = "Experimental assault rifle using a unique dampening mechanism to reduce felt recoil. High fire rate but medicore precision."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_aek.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_aek.mdl"
@@ -70,6 +70,9 @@ SWEP.BalanceStats = {
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
+	[TacRP.BALANCE_OLDSCHOOL] = {
+		HipFireSpreadPenalty = 0.012,
+	}
 }
 
 SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
