@@ -21,8 +21,8 @@ SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
         // TODO
         Damage_Max = 40,
-        Damage_Min = 70,
-        Range_Max = 4000,
+        Damage_Min = 60,
+        Range_Max = 3500,
         Range_Min = 1500,
 
         MoveSpeedMult = 0.8,

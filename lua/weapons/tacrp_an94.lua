@@ -81,7 +81,7 @@ SWEP.Penetration = 7 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.725
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 3,
+    [HITGROUP_HEAD] = 4,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1.25,
     [HITGROUP_LEFTARM] = 1,
@@ -119,7 +119,8 @@ SWEP.RecoilFirstShotMult = 0.5 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
 SWEP.RecoilKick = 5.5
-SWEP.RecoilStability = 0.3
+SWEP.RecoilStability = 0.4
+SWEP.RecoilAltMultiplier = 100
 
 SWEP.RecoilSpreadPenalty = 0.0055
 SWEP.HipFireSpreadPenalty = 0.035
