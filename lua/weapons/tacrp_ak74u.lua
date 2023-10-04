@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Carbine configuration of the AK-74, designed for Soviet tank crews.  Exceptional handling but a fast rate of fire makes it difficult to control."
+SWEP.Description = "SMG-sized rifle designed for tank crews. Decent power for its form factor, excellent handling but poor accuracy and recoil."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_74u.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_74u.mdl"

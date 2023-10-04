@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Finnish derivative of the AK design with balanced performance and greater armor penetration."
+SWEP.Description = "Balanced AK derrivative with better armor penetration and extended magazine. \nA bit bulkier than a standard AK."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_rk95.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_rk95.mdl"
@@ -22,7 +22,7 @@ SWEP.BalanceStats = {
         Damage_Max = 27,
         Damage_Min = 20,
 
-        MoveSpeedMult = 0.85,
+        MoveSpeedMult = 0.8,
         ShootingSpeedMult = 0.75,
         SightedSpeedMult = 0.75,
         MeleeSpeedMult = 1,
@@ -50,7 +50,7 @@ SWEP.BalanceStats = {
             [HITGROUP_GEAR] = 0.9
         },
 
-        ReloadTimeMult = 1.25,
+        ReloadTimeMult = 1.45,
 
         MoveSpeedMult = 0.9,
         ShootingSpeedMult = 0.8,
@@ -68,6 +68,10 @@ SWEP.BalanceStats = {
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
+	[TacRP.BALANCE_OLDSCHOOL] = {
+		HipFireSpreadPenalty = 0.009,
+		RecoilSpreadPenalty = 0.0045,
+	}
 }
 
 SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
@@ -125,14 +129,14 @@ SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.925
+SWEP.MoveSpeedMult = 0.9
 SWEP.ShootingSpeedMult = 0.85
 SWEP.SightedSpeedMult = 0.65
 
-SWEP.ReloadSpeedMult = 0.5
+SWEP.ReloadSpeedMult = 0.47
 
-SWEP.AimDownSightsTime = 0.4
-SWEP.SprintToFireTime = 0.4
+SWEP.AimDownSightsTime = 0.45
+SWEP.SprintToFireTime = 0.5
 
 SWEP.Sway = 1.25
 SWEP.ScopedSway = 0.15
@@ -167,10 +171,10 @@ SWEP.HolsterPos = Vector(5, -2, -6)
 SWEP.HolsterAng = Angle(0, 0, 0)
 
 
-SWEP.ClipSize = 30
+SWEP.ClipSize = 35
 SWEP.Ammo = "ar2"
 
-SWEP.ReloadTimeMult = 1
+SWEP.ReloadTimeMult = 1.2
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/rk95.mdl"
 SWEP.DropMagazineImpact = "plastic"
 

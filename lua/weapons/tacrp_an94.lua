@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Experimental assault rifle with a unique 'hyperburst' that fires two shots in quick succession with low recoil.  \nThe stupidly-complex mechanism adds a significant bulk to the weapon."
+SWEP.Description = "Experimental assault rifle with a unique 2-round \"hyperburst.\" The rifle's complex mechanism affords low recoil but is very bulky."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_an94.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_an94.mdl"
@@ -67,6 +67,10 @@ SWEP.BalanceStats = {
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
+	[TacRP.BALANCE_OLDSCHOOL] = {
+		RecoilResetTime = 0.3,
+		RecoilSpreadPenalty = 0.004
+	},
 }
 
 SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
@@ -97,7 +101,6 @@ SWEP.MuzzleVelocity = 25000
 
 SWEP.Firemodes = {
     -2,
-    2,
     1
 }
 
