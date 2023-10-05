@@ -3,7 +3,7 @@ ATT.FullName = "6P20 Compensator"
 ATT.Icon = Material("entities/tacrp_att_muzz_supp_assassin.png", "mips smooth")
 ATT.Description = "AK pattern muzzle device that straightens recoil."
 ATT.Pros = {"stat.recoilkick", "stat.recoilstability"}
-ATT.Cons = {"stat.spread", "stat.recoilspread"}
+ATT.Cons = {"stat.spread", "stat.bloomintensity"}
 
 ATT.Model = "models/weapons/tacint_extras/addons/ak74_comp.mdl"
 ATT.Scale = 0.9
