@@ -22,7 +22,7 @@ SWEP.BalanceStats = {
         Damage_Max = 23,
         Damage_Min = 15,
 
-        RecoilKick = 1.5,
+        RecoilKick = 2,
 
         MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.75,
@@ -114,14 +114,14 @@ SWEP.Spread = 0.004
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 12
-SWEP.RecoilResetTime = 0.15
-SWEP.RecoilDissipationRate = 14
+SWEP.RecoilMaximum = 13
+SWEP.RecoilResetTime = 0.13
+SWEP.RecoilDissipationRate = 18
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 0.75
 
-SWEP.RecoilKick = 2.5
+SWEP.RecoilKick = 3
 SWEP.RecoilStability = 0.4
 
 SWEP.RecoilSpreadPenalty = 0.0022
@@ -161,8 +161,8 @@ SWEP.BlindFirePos = Vector(3, -2, -5)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(0.05, 0, 0)
-SWEP.SightPos = Vector(-4.66, -7.5, -2.9)
+SWEP.SightAng = Angle(0.02, -0.5, 0)
+SWEP.SightPos = Vector(-4.66, -7.5, -3)
 
 SWEP.CorrectivePos = Vector(0, 0, -0.05)
 SWEP.CorrectiveAng = Angle(0.75, 0.7, 0)
@@ -183,7 +183,7 @@ SWEP.DropMagazineImpact = "metal"
 SWEP.ReloadUpInTime = 1.65
 SWEP.DropMagazineTime = 0.65
 
-SWEP.FreeAimMaxAngle = 4.5
+SWEP.FreeAimMaxAngle = 5
 
 // sounds
 
@@ -192,7 +192,7 @@ local path1 = "tacint_shark/weapons/ak74u/"
 local path2 = "tacint_extras/ak74/"
 
 SWEP.Sound_Shoot = "^" .. path2 .. "ak47-1.wav"
-SWEP.Sound_Shoot_Silenced = path .. "fire_silenced-1.wav"
+SWEP.Sound_Shoot_Silenced = path2 .. "fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 120
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
@@ -245,7 +245,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [1] = {
-                Pos_VM = Vector(-5, 0.4, 2),
+                Pos_VM = Vector(-5.5, 0.5, 2),
                 Pos_WM = Vector(-0.4, 2, 0.5),
             }
         },
@@ -277,8 +277,8 @@ SWEP.Attachments = {
         InstalledElements = {"tactical"},
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
-        VMScale = 0.8,
-        Pos_VM = Vector(-5.4, 0.15, 2.5),
+        VMScale = 0.75,
+        Pos_VM = Vector(-5.5, 0.15, 2.4),
         Ang_VM = Angle(90, 0, 0),
         Pos_WM = Vector(0, 3, 0.5),
         Ang_WM = Angle(0, -90, 0),
@@ -310,7 +310,7 @@ SWEP.Attachments = {
     },
     [4] = {
         PrintName = "Accessory",
-        Category = {"acc", "acc_foldstock", "acc_sling", "acc_duffle", "perk_extendedmag"},
+        Category = {"acc", "acc_ak74", "acc_sling", "acc_duffle", "perk_extendedmag"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
     },
