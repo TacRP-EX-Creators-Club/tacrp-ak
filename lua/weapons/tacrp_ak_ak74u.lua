@@ -8,9 +8,9 @@ SWEP.PrintName = "AKS-74U"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "3Security"
-SWEP.SubCatType = "4Assault Rifle"
+SWEP.SubCatType = "3Submachine Gun"
 
-SWEP.Description = "AK pattern carbine designed for tank crews and special forces. Impressive firepower in a small package, but not gentle in terms of recoil."
+SWEP.Description = "SMG-sized carbine designed for tank crews and special forces. Impressive firepower in a small package, but not gentle in terms of recoil."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_74u.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_74u.mdl"
