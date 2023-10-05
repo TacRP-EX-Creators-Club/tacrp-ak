@@ -1,4 +1,4 @@
-ATT.PrintName = "PBS Supp."
+ATT.PrintName = "P. Suppressor"
 ATT.FullName = "PBS-5 Suppressor"
 ATT.Icon = Material("entities/tacrp_att_muzz_supp_assassin.png", "mips smooth")
 ATT.Description = "AK pattern suppressor improving recoil stability at cost of accuracy."
@@ -12,7 +12,7 @@ ATT.ModelOffset = Vector(0.5, 0, 0)
 
 ATT.Category = "silencer"
 
-ATT.SortOrder = 2.5
+ATT.SortOrder = 8
 
 ATT.Add_Vol_Shoot = -25
 ATT.Mult_MuzzleVelocity = 0.9
