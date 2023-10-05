@@ -6,11 +6,11 @@ ATT.Pros = {"stat.recoilkick", "stat.recoilstability"}
 ATT.Cons = {"stat.spread", "stat.recoilspread"}
 
 ATT.Model = "models/weapons/tacint_extras/addons/ak74_comp.mdl"
-ATT.Scale = 1
+ATT.Scale = 0.9
 
-ATT.ModelOffset = Vector(-1.25, 0, 0.02)
+ATT.ModelOffset = Vector(-1.8, 0, 0.02)
 
-ATT.Category = "muzz_ak"
+ATT.Category = {"muzz_ak", "muzzle"}
 
 ATT.SortOrder = 0.1
 

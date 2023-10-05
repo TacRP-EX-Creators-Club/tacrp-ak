@@ -10,7 +10,7 @@ ATT.Scale = 1.25
 
 ATT.ModelOffset = Vector(-0.5, 0, 0.03)
 
-ATT.Category = "muzz_ak"
+ATT.Category = {"muzz_ak", "muzzle"}
 
 ATT.SortOrder = 0.2
 

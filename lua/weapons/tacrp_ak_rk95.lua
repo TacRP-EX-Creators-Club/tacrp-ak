@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Balanced AK derrivative with better armor penetration and extended magazine. \nA bit bulkier than a standard AK."
+SWEP.Description = "Finnish AK derivative with high armor penetration and extended magazine."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_rk95.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_rk95.mdl"
@@ -20,9 +20,12 @@ SWEP.Slot = 2
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
         Damage_Max = 27,
-        Damage_Min = 20,
+        Damage_Min = 19,
+        ArmorPenetration = 0.95,
 
-        MoveSpeedMult = 0.8,
+        RecoilKick = 5,
+
+        MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.75,
         SightedSpeedMult = 0.75,
         MeleeSpeedMult = 1,
@@ -68,10 +71,10 @@ SWEP.BalanceStats = {
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
-	[TacRP.BALANCE_OLDSCHOOL] = {
-		HipFireSpreadPenalty = 0.009,
-		RecoilSpreadPenalty = 0.0045,
-	}
+    [TacRP.BALANCE_OLDSCHOOL] = {
+        HipFireSpreadPenalty = 0.009,
+        RecoilSpreadPenalty = 0.0045,
+    }
 }
 
 SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
@@ -80,9 +83,9 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 SWEP.Damage_Max = 25
 SWEP.Damage_Min = 18
-SWEP.Range_Min = 1200 // distance for which to maintain maximum damage
-SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
-SWEP.Penetration = 7 // units of metal this weapon can penetrate
+SWEP.Range_Min = 900 // distance for which to maintain maximum damage
+SWEP.Range_Max = 3800 // distance at which we drop to minimum damage
+SWEP.Penetration = 10 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.875
 SWEP.ArmorBonus = 2
 
@@ -108,19 +111,20 @@ SWEP.Firemodes = {
 
 SWEP.RPM = 600
 
-SWEP.Spread = 0.004
+SWEP.Spread = 0.0065
 
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 14
-SWEP.RecoilResetTime = 0.15
-SWEP.RecoilDissipationRate = 18
+SWEP.RecoilMaximum = 10
+SWEP.RecoilResetTime = 0.12
+SWEP.RecoilDissipationRate = 14
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 1.5
-SWEP.RecoilKick = 5
-SWEP.RecoilStability = 0.4
+SWEP.RecoilVisualKick = 1
+SWEP.RecoilKick = 6
+SWEP.RecoilStability = 0.45
+SWEP.RecoilAltMultiplier = 250
 
 SWEP.RecoilSpreadPenalty = 0.0032
 SWEP.HipFireSpreadPenalty = 0.03
@@ -135,8 +139,8 @@ SWEP.SightedSpeedMult = 0.65
 
 SWEP.ReloadSpeedMult = 0.47
 
-SWEP.AimDownSightsTime = 0.45
-SWEP.SprintToFireTime = 0.5
+SWEP.AimDownSightsTime = 0.4
+SWEP.SprintToFireTime = 0.44
 
 SWEP.Sway = 1.25
 SWEP.ScopedSway = 0.15
@@ -283,7 +287,7 @@ SWEP.Attachments = {
     },
     [2] = {
         PrintName = "Muzzle",
-        Category = "silencer",
+        Category = {"silencer", "muzz_ak"},
         Bone = "ValveBiped.AK47_rootbone",
         WMBone = "Box01",
         AttachSound = "tacrp/weapons/silencer_on.wav",

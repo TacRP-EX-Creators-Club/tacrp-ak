@@ -10,7 +10,7 @@ ATT.Scale = 1.5
 
 ATT.ModelOffset = Vector(0.5, 0, 0)
 
-ATT.Category = "muzz_ak"
+ATT.Category = "silencer"
 
 ATT.SortOrder = 2.5
 
