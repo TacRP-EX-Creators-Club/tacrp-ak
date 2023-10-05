@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Burst-fire AK rifle with controlable recoil. \nModular design allows for quick-swapping the weapon's caliber."
+SWEP.Description = "Burst-fire AK rifle with controlable recoil.\nModular design allows for quick-swapping the weapon's caliber."
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_ak12.mdl"
 SWEP.WorldModel = "models/weapons/tacint_extras/w_ak12.mdl"
@@ -69,11 +69,11 @@ SWEP.BalanceStats = {
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
-	[TacRP.BALANCE_OLDSCHOOL] = {
-		RecoilMaximum = 18,
-		RecoilDissipationRate = 15,
-		RecoilSpreadPenalty = 0.004
-	}
+    [TacRP.BALANCE_OLDSCHOOL] = {
+        RecoilMaximum = 18,
+        RecoilDissipationRate = 15,
+        RecoilSpreadPenalty = 0.004
+    }
 }
 
 SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle

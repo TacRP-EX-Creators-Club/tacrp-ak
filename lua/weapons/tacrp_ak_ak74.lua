@@ -22,7 +22,7 @@ SWEP.BalanceStats = {
         Damage_Max = 23,
         Damage_Min = 15,
 
-        RecoilKick = 2,
+        RecoilKick = 2.5,
 
         MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.75,
