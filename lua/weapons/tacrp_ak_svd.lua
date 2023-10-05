@@ -8,7 +8,7 @@ SWEP.PrintName = "SVD"
 SWEP.Category = "Tactical RP" // "Tactical RP (Extras)"
 
 SWEP.SubCatTier = "4Consumer"
-SWEP.SubCatType = "6Precision Rifle"
+SWEP.SubCatType = "7Sniper Rifle"
 
 SWEP.Description = "Russian marksman rifle with low fire rate but great range and damage.\nWhile superficially resembling the AK design, it is completely unrelated mechanically."
 
