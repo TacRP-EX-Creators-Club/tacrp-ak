@@ -1,6 +1,6 @@
 ATT.PrintName = "P. Suppressor"
 ATT.FullName = "PBS-5 Suppressor"
-ATT.Icon = Material("entities/tacrp_att_muzz_supp_assassin.png", "mips smooth")
+ATT.Icon = Material("entities/tacrp_att_muzz_supp_pbs.png", "mips smooth")
 ATT.Description = "AK pattern suppressor improving recoil stability at cost of accuracy."
 ATT.Pros = {"stat.vol_shoot", "stat.recoilstability"}
 ATT.Cons = {"stat.spread", "stat.muzzlevelocity"}

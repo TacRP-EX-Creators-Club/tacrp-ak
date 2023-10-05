@@ -1,6 +1,6 @@
 ATT.PrintName = "Compensator"
 ATT.FullName = "6P20 Compensator"
-ATT.Icon = Material("entities/tacrp_att_muzz_supp_assassin.png", "mips smooth")
+ATT.Icon = Material("entities/tacrp_att_muzz_ak_comp.png", "mips smooth")
 ATT.Description = "AK pattern muzzle device that straightens recoil."
 ATT.Pros = {"stat.recoilkick", "stat.recoilstability"}
 ATT.Cons = {"stat.spread", "stat.bloomintensity"}

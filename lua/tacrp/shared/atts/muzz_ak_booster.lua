@@ -1,6 +1,6 @@
 ATT.PrintName = "Booster"
 ATT.FullName = "6P26 Muzzle Booster"
-ATT.Icon = Material("entities/tacrp_att_muzz_supp_assassin.png", "mips smooth")
+ATT.Icon = Material("entities/tacrp_att_muzz_ak_booster.png", "mips smooth")
 ATT.Description = "AK pattern muzzle device that increases rate of fire."
 ATT.Pros = {"stat.rpm", "stat.muzzlevelocity"}
 ATT.Cons = {"stat.recoil"}

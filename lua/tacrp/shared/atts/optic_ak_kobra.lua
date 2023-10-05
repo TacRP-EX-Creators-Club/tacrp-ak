@@ -1,5 +1,5 @@
 ATT.PrintName = "Kobra"
-ATT.Icon = Material("entities/tacrp_att_optic_pso1.png", "mips smooth")
+ATT.Icon = Material("entities/tacrp_att_optic_ak_kobra.png", "mips smooth")
 ATT.Description = "Russian dovetail reflex sight."
 ATT.Pros = {"att.sight.1"}
 
