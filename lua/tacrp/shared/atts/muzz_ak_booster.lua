@@ -6,9 +6,9 @@ ATT.Pros = {"stat.rpm", "stat.muzzlevelocity"}
 ATT.Cons = {"stat.recoil"}
 
 ATT.Model = "models/weapons/tacint_extras/addons/ak74u_booster.mdl"
-ATT.Scale = 1.1
+ATT.Scale = 1.25
 
-ATT.ModelOffset = Vector(-1.4, 0, 0.03)
+ATT.ModelOffset = Vector(-0.5, 0, 0.03)
 
 ATT.Category = "muzz_ak"
 
