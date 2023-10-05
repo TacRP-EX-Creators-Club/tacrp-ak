@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Burst-fire AK rifle with controlable recoil.\nModular design allows for quick-swapping the weapon's caliber."
+SWEP.Description = "One of many attempts at modernizing the AK. This experimental model uses burst fire to reduce recoil.\nModular design allows quick swapping of the weapon's caliber."
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_ak12.mdl"
 SWEP.WorldModel = "models/weapons/tacint_extras/w_ak12.mdl"
@@ -20,9 +20,9 @@ SWEP.Slot = 2
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
         Damage_Max = 24,
-        Damage_Min = 18,
+        Damage_Min = 16,
 
-        RecoilKick = 4,
+        RecoilKick = 3,
 
         MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.75,
@@ -80,7 +80,7 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 25
+SWEP.Damage_Max = 26
 SWEP.Damage_Min = 18
 SWEP.Range_Min = 1500 // distance for which to maintain maximum damage
 SWEP.Range_Max = 4000 // distance at which we drop to minimum damage
@@ -107,7 +107,10 @@ SWEP.Firemodes = {
     1
 }
 
-SWEP.RPM = 700
+SWEP.PostBurstDelay = 0.08
+
+SWEP.RPM = 600
+SWEP.RPMMultBurst = 700 / 600
 
 SWEP.Spread = 0.004
 
@@ -121,7 +124,7 @@ SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
 
-SWEP.RecoilKick = 3.5
+SWEP.RecoilKick = 2.5
 SWEP.RecoilStability = 0.45
 
 SWEP.RecoilSpreadPenalty = 0.0014
@@ -264,8 +267,8 @@ SWEP.Attachments = {
         InstalledElements = {"sight"},
         AttachSound = "TacRP/weapons/optic_on.wav",
         DetachSound = "TacRP/weapons/optic_off.wav",
-        VMScale = 0.85,
-        Pos_VM = Vector(-4.5, 0.225, 3.5),
+        VMScale = 0.9,
+        Pos_VM = Vector(-4.55, 0.225, 3.5),
         Pos_WM = Vector(0, 4, 0.5),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),

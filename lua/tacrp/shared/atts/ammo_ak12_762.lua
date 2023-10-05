@@ -13,7 +13,7 @@ ATT.SortOrder = 0.1
 ATT.Override_Ammo = "ar2"
 
 ATT.Mult_Damage_Max = 1.17
-ATT.Mult_Damage_Min = 1.12
+ATT.Mult_Damage_Min = 1.25
 ATT.Mult_RPM = 650 / 700
 
 ATT.Add_Penetration = 3
