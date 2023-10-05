@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "SMG-sized rifle designed for tank crews. Decent power for its form factor, excellent handling but poor accuracy and recoil."
+SWEP.Description = "AK pattern carbine designed for tank crews and special forces. Impressive firepower in a small package, but not gentle in terms of recoil."
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_74u.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_74u.mdl"
@@ -19,7 +19,7 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 24,
+        Damage_Max = 25,
         Damage_Min = 13,
 
         MoveSpeedMult = 0.88,
@@ -74,8 +74,8 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 SWEP.Damage_Max = 20
 SWEP.Damage_Min = 11
-SWEP.Range_Min = 1500 // distance for which to maintain maximum damage
-SWEP.Range_Max = 3200 // distance at which we drop to minimum damage
+SWEP.Range_Min = 900 // distance for which to maintain maximum damage
+SWEP.Range_Max = 3600 // distance at which we drop to minimum damage
 SWEP.Penetration = 7 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.725
 
@@ -90,7 +90,7 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.9
 }
 
-SWEP.MuzzleVelocity = 22000
+SWEP.MuzzleVelocity = 18000
 
 // misc. shooting
 
@@ -99,7 +99,7 @@ SWEP.Firemodes = {
     1
 }
 
-SWEP.RPM = 720
+SWEP.RPM = 700
 
 SWEP.Spread = 0.01
 
@@ -112,8 +112,8 @@ SWEP.RecoilDissipationRate = 15
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
-SWEP.RecoilKick = 5
-SWEP.RecoilStability = 0.25
+SWEP.RecoilKick = 4
+SWEP.RecoilStability = 0.4
 
 SWEP.RecoilSpreadPenalty = 0.0028
 SWEP.HipFireSpreadPenalty = 0.022
@@ -128,11 +128,11 @@ SWEP.SightedSpeedMult = 0.7
 
 SWEP.ReloadSpeedMult = 0.5
 
-SWEP.AimDownSightsTime = 0.33
-SWEP.SprintToFireTime = 0.35
+SWEP.AimDownSightsTime = 0.3
+SWEP.SprintToFireTime = 0.33
 
-SWEP.Sway = 1
-SWEP.ScopedSway = 0.175
+SWEP.Sway = 0.9
+SWEP.ScopedSway = 0.2
 
 // hold types
 
@@ -168,7 +168,7 @@ SWEP.DeployTimeMult = 0.9
 SWEP.ClipSize = 30
 SWEP.Ammo = "smg1"
 
-SWEP.ReloadTimeMult = 0.95
+SWEP.ReloadTimeMult = 0.925
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/74u.mdl"
 SWEP.DropMagazineImpact = "plastic"
 
@@ -185,7 +185,7 @@ local path1 = "tacint_shark/weapons/ak74u/"
 SWEP.Sound_Shoot = "^" .. path1 .. "ak47-1.wav"
 SWEP.Sound_Shoot_Silenced = path1 .. "g3sg1-1.wav"
 
-SWEP.Pitch_Shoot = 105
+SWEP.Pitch_Shoot = 100
 SWEP.Vol_Shoot = 120
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 
@@ -282,12 +282,13 @@ SWEP.Attachments = {
     },
     [2] = {
         PrintName = "Muzzle",
-        Category = "silencer",
+        Category = {"silencer", "muzz_ak"},
         Bone = "ValveBiped.AK47_rootbone",
         WMBone = "Box01",
+        VMScale = 0.75,
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
-        Pos_VM = Vector(-3.25, 0.1, 20.5),
+        Pos_VM = Vector(-3.35, 0.14, 19.4),
         Pos_WM = Vector(0, 19.25, -1.5),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),

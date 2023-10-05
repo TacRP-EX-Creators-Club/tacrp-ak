@@ -1,4 +1,4 @@
-ATT.PrintName = "6P20"
+ATT.PrintName = "Compensator"
 ATT.FullName = "6P20 Compensator"
 ATT.Icon = Material("entities/tacrp_att_muzz_supp_assassin.png", "mips smooth")
 ATT.Description = "AK pattern muzzle device that straightens recoil."
@@ -10,9 +10,9 @@ ATT.Scale = 1
 
 ATT.ModelOffset = Vector(-1.25, 0, 0.02)
 
-ATT.Category = "silencer"
+ATT.Category = "muzz_ak"
 
-ATT.SortOrder = 10
+ATT.SortOrder = 0.1
 
 ATT.Add_RecoilStability = 0.05
 ATT.Mult_RecoilSpreadPenalty = 1.1

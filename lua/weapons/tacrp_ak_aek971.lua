@@ -19,10 +19,10 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 18,
+        Damage_Max = 17,
         Damage_Min = 10,
 
-        RecoilKick = 2,
+        RecoilKick = 3,
 
         MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.75,
@@ -70,19 +70,19 @@ SWEP.BalanceStats = {
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
-	[TacRP.BALANCE_OLDSCHOOL] = {
-		HipFireSpreadPenalty = 0.012,
-	}
+    [TacRP.BALANCE_OLDSCHOOL] = {
+        HipFireSpreadPenalty = 0.012,
+    }
 }
 
 SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 20
-SWEP.Damage_Min = 10
+SWEP.Damage_Max = 18
+SWEP.Damage_Min = 9
 SWEP.Range_Min = 1100 // distance for which to maintain maximum damage
-SWEP.Range_Max = 2500 // distance at which we drop to minimum damage
+SWEP.Range_Max = 3600 // distance at which we drop to minimum damage
 SWEP.Penetration = 7 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.725
 
@@ -120,7 +120,7 @@ SWEP.RecoilFirstShotMult = 2 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 0.5
 
-SWEP.RecoilKick = 4
+SWEP.RecoilKick = 3
 SWEP.RecoilStability = 0.5
 SWEP.RecoilAltMultiplier = 300
 
@@ -282,7 +282,7 @@ SWEP.Attachments = {
     },
     [2] = {
         PrintName = "Muzzle",
-        Category = "silencer",
+        Category = {"silencer", "muzz_ak"},
         Bone = "ValveBiped.AK47_rootbone",
         WMBone = "Box01",
         AttachSound = "tacrp/weapons/silencer_on.wav",
