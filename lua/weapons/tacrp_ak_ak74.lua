@@ -13,7 +13,7 @@ SWEP.SubCatType = "4Assault Rifle"
 SWEP.Description = "A well-rounded staple from Eastern Europe with controllable recoil and good range."
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_ak74.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_ak47.mdl"
+SWEP.WorldModel = "models/weapons/tacint_extras/w_ak74.mdl"
 
 SWEP.Slot = 2
 
@@ -123,6 +123,7 @@ SWEP.RecoilVisualKick = 0.75
 
 SWEP.RecoilKick = 3
 SWEP.RecoilStability = 0.4
+SWEP.RecoilAltMultiplier = 150
 
 SWEP.RecoilSpreadPenalty = 0.0022
 SWEP.HipFireSpreadPenalty = 0.05
@@ -238,15 +239,21 @@ SWEP.AttachmentElements = {
         BGs_VM = {
             {2, 1}
         },
+        BGs_WM = {
+            {2, 1}
+        },
     },
     ["akmount"] = {
         BGs_VM = {
             {2, 0}
         },
+        BGs_WM = {
+            {2, 0}
+        },
         AttPosMods = {
             [1] = {
                 Pos_VM = Vector(-5.5, 0.5, 2),
-                Pos_WM = Vector(-0.4, 2, 0.5),
+                Pos_WM = Vector(-0.4, 1, 0.5),
             }
         },
         SortOrder = 2,
@@ -278,9 +285,10 @@ SWEP.Attachments = {
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
         VMScale = 0.75,
+        WMScale = 0.75,
         Pos_VM = Vector(-5.5, 0.15, 2.4),
         Ang_VM = Angle(90, 0, 0),
-        Pos_WM = Vector(0, 3, 0.5),
+        Pos_WM = Vector(0, 0.4, 0.1),
         Ang_WM = Angle(0, -90, 0),
     },
     [2] = {
@@ -291,8 +299,9 @@ SWEP.Attachments = {
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
         VMScale = 0.8,
+        WMScale = 0.8,
         Pos_VM = Vector(-3.3, 0.14, 29),
-        Pos_WM = Vector(0, 28, -1.75),
+        Pos_WM = Vector(0, 27.4, -2),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),
     },
@@ -304,7 +313,7 @@ SWEP.Attachments = {
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
         Pos_VM = Vector(-3.25, -0.1, 19),
-        Pos_WM = Vector(0, 19, -2),
+        Pos_WM = Vector(0, 19, -2.5),
         Ang_VM = Angle(90, 0, -90),
         Ang_WM = Angle(0, -90, 180),
     },
