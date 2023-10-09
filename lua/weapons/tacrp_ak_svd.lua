@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Extras)"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "7Sniper Rifle"
 
-SWEP.Description = "Russian marksman rifle with low fire rate but great range and damage.\nWhile superficially resembling the AK design, it is completely unrelated mechanically."
+SWEP.Description = "Russian marksman rifle with low fire rate but great range and damage. Equipped with a 6x scope by default.\nWhile superficially resembling the AK design, it is completely unrelated mechanically."
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_svd.mdl"
 SWEP.WorldModel = "models/weapons/tacint_extras/w_svd.mdl"

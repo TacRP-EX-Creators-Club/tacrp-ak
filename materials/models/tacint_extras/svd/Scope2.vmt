@@ -1,7 +1,4 @@
 VertexLitGeneric
 {
 	"$basetexture"	"models\tacint_extras\svd\Scope2"
-	"$bumpmap" 		"models\tacint_extras\svd\Scope2_normal"
-	"$envmap" 		"env_cubemap"
-	"$normalmapalphaenvmapmask" 1
 }
