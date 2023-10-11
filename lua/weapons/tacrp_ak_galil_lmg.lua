@@ -148,8 +148,8 @@ SWEP.SprintPos = Vector(5, 0, -2)
 SWEP.SightAng = Angle(0.05, -0.65, 0)
 SWEP.SightPos = Vector(-4.665, -7.5, -3.62)
 
-SWEP.CorrectivePos = Vector(0, 0, 0)
-SWEP.CorrectiveAng = Angle(0, 0, 0)
+SWEP.CorrectivePos = Vector(-0.02, 0, 0)
+SWEP.CorrectiveAng = Angle(0.725, 0.4, 0)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_BACK
@@ -263,7 +263,7 @@ SWEP.Attachments = {
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
         VMScale = 0.85,
-        Pos_VM = Vector(-6.65, 0.15, 4),
+        Pos_VM = Vector(-6.65, 0.125, 4),
         Ang_VM = Angle(90, 0, 0),
         Pos_WM = Vector(0, 3, 0.5),
         Ang_WM = Angle(0, -90, 0),
