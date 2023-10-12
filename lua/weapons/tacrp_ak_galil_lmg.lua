@@ -24,7 +24,7 @@ Suppressed Sound: Vunsunta
 Animation: Tactical Intervention]]
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_galil_lmg.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_ak47.mdl"
+SWEP.WorldModel = "models/weapons/tacint_extras/w_galil_lmg.mdl"
 
 SWEP.Slot = 2
 
@@ -236,6 +236,9 @@ SWEP.AttachmentElements = {
         BGs_VM = {
             {2, 1}
         },
+        BGs_WM = {
+            {2, 1}
+        },
     },
     ["bipod"] = {
         BGs_VM = {
@@ -274,9 +277,10 @@ SWEP.Attachments = {
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
         VMScale = 0.85,
+        WMScale = 0.85,
         Pos_VM = Vector(-6.65, 0.125, 4),
         Ang_VM = Angle(90, 0, 0),
-        Pos_WM = Vector(0, 3, 0.5),
+        Pos_WM = Vector(0, 2, 1.4),
         Ang_WM = Angle(0, -90, 0),
     },
     [2] = {
@@ -286,8 +290,8 @@ SWEP.Attachments = {
         WMBone = "Box01",
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
-        Pos_VM = Vector(-3.9, 0.13, 32.6),
-        Pos_WM = Vector(0, 28, -1.75),
+        Pos_VM = Vector(-3.96, 0.13, 32.6),
+        Pos_WM = Vector(0, 30.4, -1.3),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),
     },
@@ -299,9 +303,9 @@ SWEP.Attachments = {
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
         Pos_VM = Vector(-3.9, -0.3, 19),
-        Pos_WM = Vector(0, 19, -2),
+        Pos_WM = Vector(-0.3, 19, -1.5),
         Ang_VM = Angle(90, 0, -90),
-        Ang_WM = Angle(0, -90, 180),
+        Ang_WM = Angle(0, -90, 90),
     },
     [4] = {
         PrintName = "Accessory",
