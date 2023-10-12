@@ -37,7 +37,7 @@ SWEP.BalanceStats = {
 
         MoveSpeedMult = 0.8,
         ShootingSpeedMult = 0.6,
-        SightedSpeedMult = 0.75,
+        SightedSpeedMult = 0.55,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
@@ -133,13 +133,13 @@ SWEP.SightedSpeedMult = 0.5
 
 SWEP.ReloadSpeedMult = 0.4
 
-SWEP.AimDownSightsTime = 0.44
-SWEP.SprintToFireTime = 0.52
+SWEP.AimDownSightsTime = 0.47
+SWEP.SprintToFireTime = 0.55
 
-SWEP.Sway = 2
+SWEP.Sway = 2.5
 SWEP.ScopedSway = 0.1
 
-SWEP.FreeAimMaxAngle = 8
+SWEP.FreeAimMaxAngle = 8.5
 
 // hold types
 
@@ -177,7 +177,7 @@ SWEP.ScopeLevels = 1 // 2 = like CS:S
 SWEP.ScopeHideWeapon = true
 
 SWEP.ClipSize = 10
-SWEP.Ammo = "ar2"
+SWEP.Ammo = "SniperPenetratedRound"
 
 SWEP.ReloadTimeMult = 1
 SWEP.DropMagazineModel = "models/weapons/tacint_extras/magazines/svd.mdl"
@@ -325,13 +325,13 @@ SWEP.Attachments = {
     },
     [6] = {
         PrintName = "Trigger",
-        Category = {"trigger_auto"},
+        Category = {"trigger_semi"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
     [7] = {
         PrintName = "Ammo",
-        Category = {"ammo_rifle"},
+        Category = {"ammo_sniper"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
