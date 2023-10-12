@@ -18,9 +18,7 @@ SWEP.Trivia_Year = "1972"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
 SWEP.Credits = [[
-Model: Rafael De Jongh, Ettubrutesbro
-Texture: WangChung
-Sound: Ghost597879, King Friday, iFlip
+Assets: Counter Strike: Online 2
 Animation: Tactical Intervention]]
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_galil_lmg.mdl"
