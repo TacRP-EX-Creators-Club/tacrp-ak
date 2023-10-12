@@ -18,7 +18,8 @@ SWEP.Trivia_Year = "1972"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
 SWEP.Credits = [[
-Assets: Counter Strike: Online 2
+Galil Assets: Counter Strike: Online 2
+Accessories: Insurgency (2014), ported by Lt. Rocky
 Animation: Tactical Intervention]]
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_galil_lmg.mdl"
