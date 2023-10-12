@@ -12,6 +12,15 @@ SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "Experimental assault rifle with a unique 2-round \"hyperburst.\" The rifle's complex mechanism affords low recoil but is very bulky."
 
+SWEP.Trivia_Caliber = "5.45x39mm"
+SWEP.Trivia_Manufacturer = "Kalashnikov Concern"
+SWEP.Trivia_Year = "1994"
+
+SWEP.Faction = TacRP.FACTION_NEUTRAL
+SWEP.Credits = [[
+Assets: Firearms: Source
+Animation: Tactical Intervention]]
+
 SWEP.ViewModel = "models/weapons/tacint_shark/v_an94.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_an94.mdl"
 
@@ -19,10 +28,10 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 22,
+        Damage_Max = 23,
         Damage_Min = 15,
 
-        RecoilKick = 4,
+        RecoilKick = 3,
 
         MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.75,
@@ -78,9 +87,9 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 // "ballistics"
 
 SWEP.Damage_Max = 24
-SWEP.Damage_Min = 15
+SWEP.Damage_Min = 17
 SWEP.Range_Min = 1350 // distance for which to maintain maximum damage
-SWEP.Range_Max = 4000 // distance at which we drop to minimum damage
+SWEP.Range_Max = 4500 // distance at which we drop to minimum damage
 SWEP.Penetration = 7 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.725
 
@@ -110,22 +119,22 @@ SWEP.RPMMultBurst = 3
 SWEP.PostBurstDelay = 0.25
 SWEP.RunawayBurst = true
 
-SWEP.Spread = 0.005
+SWEP.Spread = 0.006
 
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 10
-SWEP.RecoilResetTime = 0.175
-SWEP.RecoilDissipationRate = 14
-SWEP.RecoilFirstShotMult = 0.5 // multiplier for the first shot's recoil amount
+SWEP.RecoilMaximum = 4
+SWEP.RecoilResetTime = 0.12
+SWEP.RecoilDissipationRate = 10
+SWEP.RecoilFirstShotMult = 0.35 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
-SWEP.RecoilKick = 5.5
-SWEP.RecoilStability = 0.4
-SWEP.RecoilAltMultiplier = 100
+SWEP.RecoilKick = 2
+SWEP.RecoilStability = 0.5
+SWEP.RecoilAltMultiplier = 55
 
-SWEP.RecoilSpreadPenalty = 0.0055
+SWEP.RecoilSpreadPenalty = 0.006
 SWEP.HipFireSpreadPenalty = 0.035
 
 SWEP.CanBlindFire = true

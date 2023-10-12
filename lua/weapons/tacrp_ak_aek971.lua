@@ -12,6 +12,15 @@ SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "Experimental assault rifle using a unique dampening mechanism to reduce felt recoil. High fire rate but medicore precision."
 
+SWEP.Trivia_Caliber = "5.45x39mm"
+SWEP.Trivia_Manufacturer = "Kovrovskiy Mekhanicheskiy Zavod"
+SWEP.Trivia_Year = "1990"
+
+SWEP.Faction = TacRP.FACTION_MILITIA
+SWEP.Credits = [[
+Assets: Casper, arby26
+Animation: Tactical Intervention]]
+
 SWEP.ViewModel = "models/weapons/tacint_shark/v_aek.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_aek.mdl"
 
@@ -19,11 +28,6 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 17,
-        Damage_Min = 10,
-
-        RecoilKick = 3,
-
         MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.75,
         SightedSpeedMult = 0.75,
@@ -79,8 +83,8 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 18
-SWEP.Damage_Min = 9
+SWEP.Damage_Max = 20
+SWEP.Damage_Min = 10
 SWEP.Range_Min = 1100 // distance for which to maintain maximum damage
 SWEP.Range_Max = 3600 // distance at which we drop to minimum damage
 SWEP.Penetration = 7 // units of metal this weapon can penetrate
@@ -118,27 +122,27 @@ SWEP.RecoilResetTime = 0.12
 SWEP.RecoilDissipationRate = 15
 SWEP.RecoilFirstShotMult = 2 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 0.5
+SWEP.RecoilVisualKick = 0.4
 
-SWEP.RecoilKick = 3
+SWEP.RecoilKick = 4
 SWEP.RecoilStability = 0.5
 SWEP.RecoilAltMultiplier = 300
 
-SWEP.RecoilSpreadPenalty = 0.0024
+SWEP.RecoilSpreadPenalty = 0.0025
 SWEP.HipFireSpreadPenalty = 0.04
 
 SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.95
-SWEP.ShootingSpeedMult = 0.85
-SWEP.SightedSpeedMult = 0.65
+SWEP.MoveSpeedMult = 0.92
+SWEP.ShootingSpeedMult = 0.8
+SWEP.SightedSpeedMult = 0.6
 
 SWEP.ReloadSpeedMult = 0.5
 
-SWEP.AimDownSightsTime = 0.3
-SWEP.SprintToFireTime = 0.35
+SWEP.AimDownSightsTime = 0.33
+SWEP.SprintToFireTime = 0.37
 
 SWEP.Sway = 1.25
 SWEP.ScopedSway = 0.15

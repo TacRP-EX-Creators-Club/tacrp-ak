@@ -12,6 +12,17 @@ SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "A well-rounded staple from Eastern Europe with controllable recoil and good range."
 
+SWEP.Trivia_Caliber = "5.45x39mm"
+SWEP.Trivia_Manufacturer = "Kalashnikov Concern"
+SWEP.Trivia_Year = "1974"
+
+SWEP.Faction = TacRP.FACTION_MILITIA
+SWEP.Credits = [[
+Model: Twinke Masta, TheLama
+Texture: Millenia, The Spork
+Sound: Vunsunta
+Animation: Tactical Intervention]]
+
 SWEP.ViewModel = "models/weapons/tacint_extras/v_ak74.mdl"
 SWEP.WorldModel = "models/weapons/tacint_extras/w_ak74.mdl"
 

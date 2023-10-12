@@ -12,6 +12,17 @@ SWEP.SubCatType = "4Machine Gun"
 
 SWEP.Description = "Israeli AK derivative in machine gun configuration.\nLightweight for a machine gun, and fires at a brisk and controllable pace but with average stopping power.\nHas a bottle opener in the handguard."
 
+SWEP.Trivia_Caliber = "5.56x45mm"
+SWEP.Trivia_Manufacturer = "Israel Military Industries"
+SWEP.Trivia_Year = "1972"
+
+SWEP.Faction = TacRP.FACTION_MILITIA
+SWEP.Credits = [[
+Model: Rafael De Jongh, Ettubrutesbro
+Texture: WangChung
+Sound: Ghost597879, King Friday, iFlip
+Animation: Tactical Intervention]]
+
 SWEP.ViewModel = "models/weapons/tacint_extras/v_galil_lmg.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_ak47.mdl"
 

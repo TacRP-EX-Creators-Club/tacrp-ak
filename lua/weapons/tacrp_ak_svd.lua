@@ -12,6 +12,17 @@ SWEP.SubCatType = "7Sniper Rifle"
 
 SWEP.Description = "Russian marksman rifle with low fire rate but great range and damage. Equipped with a 6x scope by default.\nWhile superficially resembling the AK design, it is completely unrelated mechanically."
 
+SWEP.Trivia_Caliber = "7.62x54mmR"
+SWEP.Trivia_Manufacturer = "Kalashnikov Concern"
+SWEP.Trivia_Year = "1963"
+
+SWEP.Faction = TacRP.FACTION_MILITIA
+SWEP.Credits = [[
+Model: Rafael De Jongh, Ettubrutesbro
+Texture: WangChung
+Sound: Ghost597879, King Friday, iFlip
+Animation: Tactical Intervention]]
+
 SWEP.ViewModel = "models/weapons/tacint_extras/v_svd.mdl"
 SWEP.WorldModel = "models/weapons/tacint_extras/w_svd.mdl"
 
@@ -19,11 +30,10 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        // TODO
-        Damage_Max = 40,
-        Damage_Min = 60,
-        Range_Max = 3500,
-        Range_Min = 1500,
+        Damage_Max = 45,
+        Damage_Min = 75,
+        Range_Max = 8000,
+        Range_Min = 2500,
 
         MoveSpeedMult = 0.8,
         ShootingSpeedMult = 0.6,
@@ -68,18 +78,18 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 50
+SWEP.Damage_Max = 45
 SWEP.Damage_Min = 34
 SWEP.Range_Min = 1200 // distance for which to maintain maximum damage
 SWEP.Range_Max = 4500 // distance at which we drop to minimum damage
 SWEP.Penetration = 11 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.8
+SWEP.ArmorPenetration = 0.775
 SWEP.ArmorBonus = 2
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 4,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1.1,
+    [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
     [HITGROUP_LEFTLEG] = 0.75,
@@ -87,7 +97,7 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.9
 }
 
-SWEP.MuzzleVelocity = 28000
+SWEP.MuzzleVelocity = 31000
 
 // misc. shooting
 
@@ -106,8 +116,8 @@ SWEP.RecoilFirstShotMult = 0.75 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 0.75
 
-SWEP.RecoilKick = 7
-SWEP.RecoilStability = 0.65
+SWEP.RecoilKick = 5
+SWEP.RecoilStability = 0.7
 
 SWEP.RecoilSpreadPenalty = 0.003
 SWEP.HipFireSpreadPenalty = 0.08
@@ -303,7 +313,7 @@ SWEP.Attachments = {
     },
     [4] = {
         PrintName = "Accessory",
-        Category = {"acc", "acc_sling", "acc_duffle", "perk_extendedmag"},
+        Category = {"acc", "acc_sling", "acc_duffle", "acc_extmag_sniper"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
     },

@@ -12,6 +12,17 @@ SWEP.SubCatType = "3Submachine Gun"
 
 SWEP.Description = "SMG-sized carbine designed for tank crews and special forces. Impressive firepower in a small package, but not gentle in terms of recoil."
 
+SWEP.Trivia_Caliber = "5.45x39mm"
+SWEP.Trivia_Manufacturer = "Tula Arms Plant"
+SWEP.Trivia_Year = "1979"
+
+SWEP.Faction = TacRP.FACTION_MILITIA
+SWEP.Credits = [[
+Model: TheLama; Compile: Bushmasta101
+Texture: Thanez
+Sound: BlitzBoaR/CC5/modderfreak, .exe
+Animation: Tactical Intervention]]
+
 SWEP.ViewModel = "models/weapons/tacint_shark/v_74u.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_74u.mdl"
 

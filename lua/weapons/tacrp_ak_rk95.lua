@@ -4,13 +4,22 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "Sako RK95"
+SWEP.PrintName = "Sako RK 95"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "Finnish AK derivative with high armor penetration and extended magazine."
+
+SWEP.Trivia_Caliber = "7.62x39mm"
+SWEP.Trivia_Manufacturer = "SAKO"
+SWEP.Trivia_Year = "1995"
+
+SWEP.Faction = TacRP.FACTION_COALITION
+SWEP.Credits = [[
+Assets: Firearms: Source
+Animation: Tactical Intervention]]
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_rk95.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_rk95.mdl"
@@ -155,7 +164,7 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_SMG1
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(0, -2, -4)
+SWEP.PassivePos = Vector(0, -2, -4.2)
 
 SWEP.BlindFireAng = Angle(0, 5, 0)
 SWEP.BlindFirePos = Vector(3, -2, -5)
@@ -261,7 +270,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [1] = {
-                Pos_VM = Vector(-5.5, 0.4, 4),
+                Pos_VM = Vector(-5.6, 0.55, 5),
                 Pos_WM = Vector(-0.4, 2, 0.5),
                 VMScale = 1.2,
             }
@@ -279,8 +288,8 @@ SWEP.Attachments = {
         InstalledElements = {"tactical"},
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
-        VMScale = 0.85,
-        Pos_VM = Vector(-5.8, 0.15, 6),
+        VMScale = 0.8,
+        Pos_VM = Vector(-5.9, 0.2, 6),
         Ang_VM = Angle(90, 0, 0),
         Pos_WM = Vector(0, 4, 0.4),
         Ang_WM = Angle(0, -90, 0),

@@ -12,6 +12,15 @@ SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "One of many attempts at modernizing the AK. This experimental model uses burst fire to reduce recoil.\nModular design allows quick swapping of the weapon's caliber."
 
+SWEP.Trivia_Caliber = "5.45x39mm"
+SWEP.Trivia_Manufacturer = "Kalashnikov Concern"
+SWEP.Trivia_Year = "2012"
+
+SWEP.Faction = TacRP.FACTION_MILITIA
+SWEP.Credits = [[
+Assets: Counter Strike: Online 2
+Animation: Tactical Intervention]]
+
 SWEP.ViewModel = "models/weapons/tacint_extras/v_ak12.mdl"
 SWEP.WorldModel = "models/weapons/tacint_extras/w_ak12.mdl"
 
