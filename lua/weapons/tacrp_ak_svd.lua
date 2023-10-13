@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Extras)"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "7Sniper Rifle"
 
-SWEP.Description = "Russian marksman rifle with low fire rate but great range and damage. Equipped with a 6x scope by default.\nWhile superficially resembling the AK design, it is completely unrelated mechanically."
+SWEP.Description = "Russian sniper rifle with low fire rate but great damage and recoil control. Equipped with a 6x scope by default.\nWhile superficially resembling the AK design, it is completely unrelated mechanically."
 
 SWEP.Trivia_Caliber = "7.62x54mmR"
 SWEP.Trivia_Manufacturer = "Kalashnikov Concern"

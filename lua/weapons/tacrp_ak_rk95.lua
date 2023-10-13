@@ -11,6 +11,7 @@ SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "Finnish AK derivative with high armor penetration and extended magazine."
+SWEP.Description_Quote = "Despite its looks... Actually, this one's pretty much an AK."
 
 SWEP.Trivia_Caliber = "7.62x39mm"
 SWEP.Trivia_Manufacturer = "SAKO"
