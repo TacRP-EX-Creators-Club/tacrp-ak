@@ -9,7 +9,7 @@
 	"$gloss"	0.3
 	"$fresnel"	1.00
 	"$wrap"	0.47
-	"$basetexture"	"models\tacint_extras\galil_sniper\v_galilsniper"
+	"$basetexture"	"models\tacint_extras\galil_sniper\v_galilsniper_tint"
 	"$bumpmap" "models\tacint_extras\galil_sniper\v_galilsniper_normal"
 	"$envmap"		"env_cubemap"
 	
