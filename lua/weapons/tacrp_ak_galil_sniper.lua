@@ -30,7 +30,7 @@ SWEP.SlotAlt = 3
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 38,
+        Damage_Max = 37,
         Damage_Min = 24,
         ArmorPenetration = 0.8,
 
@@ -99,7 +99,7 @@ SWEP.MuzzleVelocity = 28500
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 330
+SWEP.RPM = 300
 
 SWEP.Spread = 0.0012
 
@@ -113,7 +113,7 @@ SWEP.RecoilFirstShotMult = 0.75 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
 
-SWEP.RecoilKick = 3
+SWEP.RecoilKick = 4.5
 SWEP.RecoilStability = 0.75
 SWEP.RecoilAltMultiplier = 75
 
@@ -166,10 +166,10 @@ SWEP.HolsterPos = Vector(5, -2, -6)
 SWEP.HolsterAng = Angle(0, 0, 0)
 
 
-SWEP.ClipSize = 20
+SWEP.ClipSize = 25
 SWEP.Ammo = "ar2"
 
-SWEP.ReloadTimeMult = 1.1
+SWEP.ReloadTimeMult = 1.15
 SWEP.DropMagazineModel = "models/weapons/tacint/magazines/ak47.mdl"
 SWEP.DropMagazineImpact = "metal"
 
@@ -217,7 +217,7 @@ SWEP.AnimationTranslationTable = {
     ["melee"] = {"melee1", "melee2"},
     ["jam"] = "mid_reload"
 }
-SWEP.DeployTimeMult = 1.5
+SWEP.DeployTimeMult = 1.15
 
 // attachments
 
@@ -290,12 +290,13 @@ SWEP.Attachments = {
     },
     [2] = {
         PrintName = "Muzzle",
-        Category = {"silencer", "muzz_ak"},
+        Category = "silencer",
         Bone = "ValveBiped.AK47_rootbone",
         WMBone = "Box01",
+        VMScale = 0.9,
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
-        Pos_VM = Vector(-3.96, 0.13, 32.6),
+        Pos_VM = Vector(-3.94, 0.13, 32.5),
         Pos_WM = Vector(0, 30.4, -1.3),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),
