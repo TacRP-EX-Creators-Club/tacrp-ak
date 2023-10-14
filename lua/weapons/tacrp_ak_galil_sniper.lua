@@ -247,20 +247,18 @@ SWEP.AttachmentElements = {
         }
     },
 }
-SWEP.SwayScale = 0
-SWEP.BobScale = 0
 
 SWEP.ProceduralIronFire = {
     vm_pos = Vector(0, -0.5, -0.07),
-    vm_ang = Angle(0, 0.2, 0),
-    t = 0.12,
-    tmax = 0.12,
+    vm_ang = Angle(0, 0.25, 0),
+    t = 0.15,
+    tmax = 0.15,
     bones = {
         {
             bone = "ValveBiped.bolt",
             pos = Vector(0, 0, -3),
             t0 = 0.01,
-            t1 = 0.12,
+            t1 = 0.13,
         },
     },
 }

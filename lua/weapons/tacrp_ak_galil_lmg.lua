@@ -250,8 +250,6 @@ SWEP.AttachmentElements = {
         }
     },
 }
-SWEP.SwayScale = 0
-SWEP.BobScale = 0
 
 SWEP.ProceduralIronFire = {
     vm_pos = Vector(0, -0.5, -0.07),
