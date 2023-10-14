@@ -4,15 +4,15 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "IMI Galil ARM"
+SWEP.PrintName = "IMI Galil Sniper"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "4Consumer"
-SWEP.SubCatType = "4Machine Gun"
+SWEP.SubCatType = "6Precision Rifle"
 
-SWEP.Description = "Israeli AK derivative in machine gun configuration.\nLightweight for a machine gun, and fires at a brisk and controllable pace but with average stopping power.\nHas a bottle opener in the handguard."
+SWEP.Description = "Israeli AK derivative in marksman rifle configuration.\nHighly controllable, but has a low firerate and average lethality."
 
-SWEP.Trivia_Caliber = "5.56x45mm"
+SWEP.Trivia_Caliber = "7.62x51mm"
 SWEP.Trivia_Manufacturer = "Israel Military Industries"
 SWEP.Trivia_Year = "1972"
 
@@ -20,10 +20,9 @@ SWEP.Faction = TacRP.FACTION_MILITIA
 SWEP.Credits = [[
 Galil Assets: Counter Strike: Online 2
 Accessories: Insurgency (2014), ported by Lt. Rocky
-Suppressed Sound: Vunsunta
 Animation: Tactical Intervention]]
 
-SWEP.ViewModel = "models/weapons/tacint_extras/v_galil_lmg.mdl"
+SWEP.ViewModel = "models/weapons/tacint_extras/v_galil_sniper.mdl"
 SWEP.WorldModel = "models/weapons/tacint_extras/w_galil_lmg.mdl"
 
 SWEP.Slot = 2
@@ -31,9 +30,9 @@ SWEP.SlotAlt = 3
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 23,
-        Damage_Min = 13,
-        ArmorPenetration = 0.75,
+        Damage_Max = 38,
+        Damage_Min = 24,
+        ArmorPenetration = 0.8,
 
         MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.8,
@@ -72,19 +71,19 @@ SWEP.BalanceStats = {
     }
 }
 
-SWEP.TTTReplace = TacRP.TTTReplacePreset.MachineGun
+SWEP.TTTReplace = TacRP.TTTReplacePreset.MarksmanRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 19
-SWEP.Damage_Min = 13
-SWEP.Range_Min = 1000 // distance for which to maintain maximum damage
-SWEP.Range_Max = 5000 // distance at which we drop to minimum damage
+SWEP.Damage_Max = 36
+SWEP.Damage_Min = 20
+SWEP.Range_Min = 2000 // distance for which to maintain maximum damage
+SWEP.Range_Max = 7000 // distance at which we drop to minimum damage
 SWEP.Penetration = 7 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.675
+SWEP.ArmorPenetration = 0.7
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 4.5,
+    [HITGROUP_HEAD] = 5,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1.25,
     [HITGROUP_LEFTARM] = 1,
@@ -94,34 +93,32 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.9
 }
 
-SWEP.MuzzleVelocity = 22500
+SWEP.MuzzleVelocity = 28500
 
 // misc. shooting
 
-SWEP.Firemodes = {
-    2,
-    1
-}
+SWEP.Firemode = 1
 
-SWEP.RPM = 650
+SWEP.RPM = 330
 
-SWEP.Spread = 0.0045
+SWEP.Spread = 0.0012
 
-SWEP.ShootTimeMult = 0.5
+SWEP.ShootTimeMult = 0.75
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 14
+SWEP.RecoilMaximum = 5
 SWEP.RecoilResetTime = 0.15
-SWEP.RecoilDissipationRate = 16
-SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
+SWEP.RecoilDissipationRate = 10
+SWEP.RecoilFirstShotMult = 0.75 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
 
-SWEP.RecoilKick = 2.5
-SWEP.RecoilStability = 0.4
+SWEP.RecoilKick = 3
+SWEP.RecoilStability = 0.75
+SWEP.RecoilAltMultiplier = 75
 
-SWEP.RecoilSpreadPenalty = 0.0013
-SWEP.HipFireSpreadPenalty = 0.035
+SWEP.RecoilSpreadPenalty = 0.0033
+SWEP.HipFireSpreadPenalty = 0.044
 
 SWEP.CanBlindFire = true
 
@@ -133,11 +130,11 @@ SWEP.SightedSpeedMult = 0.65
 
 SWEP.ReloadSpeedMult = 0.5
 
-SWEP.AimDownSightsTime = 0.4
-SWEP.SprintToFireTime = 0.44
+SWEP.AimDownSightsTime = 0.42
+SWEP.SprintToFireTime = 0.46
 
 SWEP.Sway = 1.5
-SWEP.ScopedSway = 0.175
+SWEP.ScopedSway = 0.1
 
 // hold types
 
@@ -169,17 +166,17 @@ SWEP.HolsterPos = Vector(5, -2, -6)
 SWEP.HolsterAng = Angle(0, 0, 0)
 
 
-SWEP.ClipSize = 65
-SWEP.Ammo = "smg1"
+SWEP.ClipSize = 20
+SWEP.Ammo = "ar2"
 
-SWEP.ReloadTimeMult = 1.3
+SWEP.ReloadTimeMult = 1.1
 SWEP.DropMagazineModel = "models/weapons/tacint/magazines/ak47.mdl"
 SWEP.DropMagazineImpact = "metal"
 
 SWEP.ReloadUpInTime = 1.65
 SWEP.DropMagazineTime = 0.65
 
-SWEP.FreeAimMaxAngle = 5.5
+SWEP.FreeAimMaxAngle = 6
 
 SWEP.Bipod = true
 SWEP.BipodRecoil = 0.3
@@ -212,10 +209,10 @@ SWEP.EjectEffect = 2
 SWEP.AnimationTranslationTable = {
     ["deploy"] = "deploy",
     ["fire_iron"] = "fire1_M",
-    ["fire1"] = "fire1_M",
-    ["fire2"] = "fire2_M",
-    ["fire3"] = "fire3_M",
-    ["fire4"] = "fire4_M",
+    ["fire1"] = "fire3_M",
+    ["fire2"] = "fire4_M",
+    ["fire3"] = "fire5_M",
+    ["fire4"] = "fire5_M",
     ["fire5"] = "fire5_M",
     ["melee"] = {"melee1", "melee2"},
     ["jam"] = "mid_reload"
@@ -322,7 +319,7 @@ SWEP.Attachments = {
     },
     [6] = {
         PrintName = "Trigger",
-        Category = {"trigger_auto"},
+        Category = {"trigger_semi"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
