@@ -241,6 +241,15 @@ SWEP.AttachmentElements = {
             {2, 1}
         },
     },
+    ["scope"] = {
+        BGs_VM = {
+            {2, 2}
+        },
+        BGs_WM = {
+            {2, 2}
+        },
+        SortOrder = 2,
+    },
     ["bipod"] = {
         BGs_VM = {
             {3, 1}
@@ -269,7 +278,7 @@ SWEP.ProceduralIronFire = {
 SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
-        Category = {"optic_cqb", "optic_medium", "optic_sniper"},
+        Category = {"optic_cqb", "optic_medium", "optic_sniper", "optic_galil"},
         Bone = "ValveBiped.AK47_rootbone",
         WMBone = "Box01",
         InstalledElements = {"tactical"},

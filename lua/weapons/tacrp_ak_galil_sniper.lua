@@ -14,7 +14,7 @@ SWEP.Description = "Israeli AK derivative in marksman rifle configuration.\nHigh
 
 SWEP.Trivia_Caliber = "7.62x51mm"
 SWEP.Trivia_Manufacturer = "Israel Military Industries"
-SWEP.Trivia_Year = "1972"
+SWEP.Trivia_Year = "1983"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
 SWEP.Credits = [[
@@ -238,6 +238,15 @@ SWEP.AttachmentElements = {
             {2, 1}
         },
     },
+    ["scope"] = {
+        BGs_VM = {
+            {2, 2}
+        },
+        BGs_WM = {
+            {2, 2}
+        },
+        SortOrder = 2
+    },
     ["bipod"] = {
         BGs_VM = {
             {3, 1}
@@ -266,7 +275,7 @@ SWEP.ProceduralIronFire = {
 SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
-        Category = {"optic_cqb", "optic_medium", "optic_sniper"},
+        Category = {"optic_cqb", "optic_medium", "optic_sniper", "optic_galil"},
         Bone = "ValveBiped.AK47_rootbone",
         WMBone = "Box01",
         InstalledElements = {"tactical"},
