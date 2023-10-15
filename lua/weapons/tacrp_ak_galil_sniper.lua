@@ -23,7 +23,7 @@ Accessories: Insurgency (2014), ported by Lt. Rocky
 Animation: Tactical Intervention]]
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_galil_sniper.mdl"
-SWEP.WorldModel = "models/weapons/tacint_extras/w_galil_lmg.mdl"
+SWEP.WorldModel = "models/weapons/tacint_extras/w_galil_sniper.mdl"
 
 SWEP.Slot = 2
 SWEP.SlotAlt = 3
@@ -285,7 +285,7 @@ SWEP.Attachments = {
         WMScale = 0.85,
         Pos_VM = Vector(-6.65, 0.125, 4),
         Ang_VM = Angle(90, 0, 0),
-        Pos_WM = Vector(0, 2, 1.4),
+        Pos_WM = Vector(0, 0, 1.25),
         Ang_WM = Angle(0, -90, 0),
     },
     [2] = {
@@ -296,8 +296,8 @@ SWEP.Attachments = {
         VMScale = 0.9,
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
-        Pos_VM = Vector(-3.94, 0.13, 32.5),
-        Pos_WM = Vector(0, 30.4, -1.3),
+        Pos_VM = Vector(-3.96, 0.13, 32.6),
+        Pos_WM = Vector(0, 30.4, -1.8),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),
     },
@@ -309,9 +309,9 @@ SWEP.Attachments = {
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
         Pos_VM = Vector(-3.9, -0.3, 19),
-        Pos_WM = Vector(-0.3, 19, -1.5),
+        Pos_WM = Vector(0.6, 12, -2),
         Ang_VM = Angle(90, 0, -90),
-        Ang_WM = Angle(0, -90, 90),
+        Ang_WM = Angle(0, -90, -90),
     },
     [4] = {
         PrintName = "Accessory",
