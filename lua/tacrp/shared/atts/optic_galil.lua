@@ -1,5 +1,5 @@
 ATT.PrintName = "Nimrod 6x40"
-ATT.Icon = Material("entities/tacrp_att_optic_ak_kobra.png", "mips smooth")
+ATT.Icon = Material("entities/tacrp_att_optic_galil_scope.png", "mips smooth")
 ATT.Description = "Sniper optic designed to be mounted onto Galil rifles."
 ATT.Pros = {"att.zoom.6"}
 
