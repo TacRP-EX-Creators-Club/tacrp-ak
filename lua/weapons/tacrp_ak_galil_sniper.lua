@@ -189,7 +189,7 @@ SWEP.BipodKick = 0.35
 local path = "tacrp/weapons/ak47/ak47_"
 local path1 = "tacint_extras/galil_lmg/"
 
-SWEP.Sound_Shoot = "^" .. path1 .. "galil-1.wav"
+SWEP.Sound_Shoot = "^" .. path1 .. "sniper-1.wav"
 SWEP.Sound_Shoot_Silenced = path1 .. "m4a1-1.wav"
 
 SWEP.Vol_Shoot = 120
