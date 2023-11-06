@@ -21,6 +21,7 @@ SWEP.Faction = TacRP.FACTION_MILITIA
 SWEP.Credits = [[
 Galil Assets: Counter Strike: Online 2
 Accessories: Insurgency (2014), ported by Lt. Rocky
+Suppressed Sound: Magmacow
 Animation: Tactical Intervention]]
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_galil_sniper.mdl"
@@ -190,7 +191,7 @@ local path = "tacrp/weapons/ak47/ak47_"
 local path1 = "tacint_extras/galil_lmg/"
 
 SWEP.Sound_Shoot = "^" .. path1 .. "sniper-1.wav"
-SWEP.Sound_Shoot_Silenced = path1 .. "m4a1-1.wav"
+SWEP.Sound_Shoot_Silenced = path1 .. "sniper-suppressed-1.wav"
 
 SWEP.Vol_Shoot = 120
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
