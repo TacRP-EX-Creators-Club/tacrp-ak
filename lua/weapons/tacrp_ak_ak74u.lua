@@ -259,6 +259,14 @@ SWEP.AttachmentElements = {
         },
         SortOrder = 2,
     },
+	["muzzle"] = {
+		BGs_VM = {
+			{3, 1}
+		},
+		BGs_WM = {
+			{3, 1}
+		},
+	},
 }
 
 SWEP.ProceduralIronFire = {
@@ -296,11 +304,13 @@ SWEP.Attachments = {
         Category = {"silencer", "muzz_ak"},
         Bone = "ValveBiped.AK47_rootbone",
         WMBone = "Box01",
+		InstalledElements = {"muzzle"},
         VMScale = 0.75,
+        WMScale = 0.85,
         AttachSound = "tacrp/weapons/silencer_on.wav",
         DetachSound = "tacrp/weapons/silencer_off.wav",
         Pos_VM = Vector(-3.35, 0.14, 19.3),
-        Pos_WM = Vector(0, 19.25, -1.5),
+        Pos_WM = Vector(0, 18.5, -1.65),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90, 0),
     },
