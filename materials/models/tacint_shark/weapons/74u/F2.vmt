@@ -6,4 +6,5 @@
 	"$phongexponent" 		"35"
 	"$phongboost" 			"1.7"	
 	"$phongfresnelranges"		"[1.5 10.1 7.1]"
+	"$nocull" "1"
 }
