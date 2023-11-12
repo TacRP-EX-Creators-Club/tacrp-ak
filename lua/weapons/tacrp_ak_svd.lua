@@ -178,7 +178,7 @@ SWEP.ScopeLevels = 1 // 2 = like CS:S
 SWEP.ScopeHideWeapon = true
 
 SWEP.ClipSize = 10
-SWEP.Ammo = "SniperPenetratedRound"
+SWEP.Ammo = "357"
 
 SWEP.ReloadTimeMult = 1
 SWEP.DropMagazineModel = "models/weapons/tacint_extras/magazines/svd.mdl"
