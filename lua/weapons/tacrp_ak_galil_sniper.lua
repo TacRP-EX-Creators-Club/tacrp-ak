@@ -35,6 +35,7 @@ SWEP.BalanceStats = {
         Damage_Max = 37,
         Damage_Min = 24,
         ArmorPenetration = 0.8,
+        RPM = 300,
 
         MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.8,
@@ -43,21 +44,24 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-        // TODO
-
+        Damage_Max = 24,
+        Damage_Min = 26,
+        Range_Min = 600,
+        Range_Max = 1200,
+        RPM = 250,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 2.5,
             [HITGROUP_CHEST] = 1.25,
             [HITGROUP_STOMACH] = 1,
-            [HITGROUP_LEFTARM] = 0.9,
-            [HITGROUP_RIGHTARM] = 0.9,
-            [HITGROUP_LEFTLEG] = 0.75,
-            [HITGROUP_RIGHTLEG] = 0.75,
+            [HITGROUP_LEFTARM] = 1,
+            [HITGROUP_RIGHTARM] = 1,
+            [HITGROUP_LEFTLEG] = 0.9,
+            [HITGROUP_RIGHTLEG] = 0.9,
             [HITGROUP_GEAR] = 0.9
         },
 
-        ReloadTimeMult = 1.25,
+        ReloadTimeMult = 1.35,
 
         MoveSpeedMult = 0.9,
         ShootingSpeedMult = 0.8,
@@ -66,10 +70,18 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 0.65,
     },
     [TacRP.BALANCE_PVE] = {
-        // TODO
+        Damage_Max = 12,
+        Damage_Min = 24,
+        Range_Min = 500,
+        Range_Max = 1000,
+
+        MoveSpeedMult = 0.85,
+        ShootingSpeedMult = 0.8,
+        SightedSpeedMult = 0.75,
+        MeleeSpeedMult = 1,
+        ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_OLDSCHOOL] = {
-        // TODO
     }
 }
 
@@ -77,15 +89,15 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.MarksmanRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 36
-SWEP.Damage_Min = 20
-SWEP.Range_Min = 2000 // distance for which to maintain maximum damage
-SWEP.Range_Max = 7000 // distance at which we drop to minimum damage
-SWEP.Penetration = 7 // units of metal this weapon can penetrate
+SWEP.Damage_Max = 28
+SWEP.Damage_Min = 15
+SWEP.Range_Min = 1000
+SWEP.Range_Max = 4200
+SWEP.Penetration = 10
 SWEP.ArmorPenetration = 0.7
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 5,
+    [HITGROUP_HEAD] = 3.5,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1.25,
     [HITGROUP_LEFTARM] = 1,
@@ -101,7 +113,7 @@ SWEP.MuzzleVelocity = 28500
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 300
+SWEP.RPM = 360
 
 SWEP.Spread = 0.0012
 
@@ -115,7 +127,7 @@ SWEP.RecoilFirstShotMult = 0.75 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
 
-SWEP.RecoilKick = 4.5
+SWEP.RecoilKick = 4
 SWEP.RecoilStability = 0.75
 SWEP.RecoilAltMultiplier = 75
 
@@ -126,17 +138,17 @@ SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.925
-SWEP.ShootingSpeedMult = 0.85
-SWEP.SightedSpeedMult = 0.65
+SWEP.MoveSpeedMult = 0.9
+SWEP.ShootingSpeedMult = 0.8
+SWEP.SightedSpeedMult = 0.6
 
-SWEP.ReloadSpeedMult = 0.5
+SWEP.ReloadSpeedMult = 0.4
 
-SWEP.AimDownSightsTime = 0.42
-SWEP.SprintToFireTime = 0.46
+SWEP.AimDownSightsTime = 0.44
+SWEP.SprintToFireTime = 0.45
 
-SWEP.Sway = 1.5
-SWEP.ScopedSway = 0.1
+SWEP.Sway = 1.25
+SWEP.ScopedSway = 0.125
 
 // hold types
 
