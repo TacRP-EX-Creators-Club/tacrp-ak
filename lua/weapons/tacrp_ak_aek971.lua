@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Experimental assault rifle using a unique dampening mechanism to reduce felt recoil. High fire rate but medicore precision."
+SWEP.Description = "Experimental assault rifle using a unique dampening mechanism to reduce felt recoil. High fire rate but medicore range."
 
 SWEP.Trivia_Caliber = "5.45x39mm"
 SWEP.Trivia_Manufacturer = "Kovrovskiy Mekhanicheskiy Zavod"
@@ -84,16 +84,16 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 // "ballistics"
 
 SWEP.Damage_Max = 20
-SWEP.Damage_Min = 10
-SWEP.Range_Min = 1100 // distance for which to maintain maximum damage
-SWEP.Range_Max = 3600 // distance at which we drop to minimum damage
+SWEP.Damage_Min = 12
+SWEP.Range_Min = 400 // distance for which to maintain maximum damage
+SWEP.Range_Max = 2400 // distance at which we drop to minimum damage
 SWEP.Penetration = 7 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.725
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 2.5,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1.15,
+    [HITGROUP_STOMACH] = 1.25,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
     [HITGROUP_LEFTLEG] = 0.85,
@@ -116,11 +116,12 @@ SWEP.Spread = 0.006
 
 SWEP.ShootTimeMult = 0.65
 
+SWEP.RecoilResetInstant = false
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 12
-SWEP.RecoilResetTime = 0.12
-SWEP.RecoilDissipationRate = 15
-SWEP.RecoilFirstShotMult = 2 // multiplier for the first shot's recoil amount
+SWEP.RecoilMaximum = 9
+SWEP.RecoilResetTime = 0.01
+SWEP.RecoilDissipationRate = 35
+SWEP.RecoilFirstShotMult = 1.5
 
 SWEP.RecoilVisualKick = 0.4
 
@@ -128,7 +129,7 @@ SWEP.RecoilKick = 4
 SWEP.RecoilStability = 0.5
 SWEP.RecoilAltMultiplier = 300
 
-SWEP.RecoilSpreadPenalty = 0.0025
+SWEP.RecoilSpreadPenalty = 0.0019
 SWEP.HipFireSpreadPenalty = 0.04
 
 SWEP.CanBlindFire = true

@@ -10,7 +10,8 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "One of many attempts at modernizing the AK. This experimental model uses burst fire to reduce recoil.\nModular design allows quick swapping of the weapon's caliber."
+SWEP.Description = "One of many attempts at modernizing the AK, this experimental model uses burst fire and allows for quick swapping of the weapon's caliber."
+SWEP.Description_Quote = "The Snow Wolf's eye opens."
 
 SWEP.Trivia_Caliber = "5.45x39mm"
 SWEP.Trivia_Manufacturer = "Kalashnikov Concern"
@@ -89,10 +90,10 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 26
-SWEP.Damage_Min = 18
-SWEP.Range_Min = 1500 // distance for which to maintain maximum damage
-SWEP.Range_Max = 4000 // distance at which we drop to minimum damage
+SWEP.Damage_Max = 28
+SWEP.Damage_Min = 16
+SWEP.Range_Min = 1200
+SWEP.Range_Max = 3200
 SWEP.Penetration = 6 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.7
 
@@ -118,25 +119,26 @@ SWEP.Firemodes = {
 
 SWEP.PostBurstDelay = 0.08
 
-SWEP.RPM = 600
-SWEP.RPMMultBurst = 700 / 600
+SWEP.RPM = 700
+SWEP.RPMMultBurst = 800 / 700
 
 SWEP.Spread = 0.004
 
 SWEP.ShootTimeMult = 0.6
 
+SWEP.RecoilResetInstant = false
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 13
-SWEP.RecoilResetTime = 0.13
-SWEP.RecoilDissipationRate = 14
-SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
+SWEP.RecoilMaximum = 10
+SWEP.RecoilResetTime = 0.01
+SWEP.RecoilDissipationRate = 36
+SWEP.RecoilFirstShotMult = 1
 
 SWEP.RecoilVisualKick = 1
 
 SWEP.RecoilKick = 2
 SWEP.RecoilStability = 0.55
 
-SWEP.RecoilSpreadPenalty = 0.0014
+SWEP.RecoilSpreadPenalty = 0.0026
 SWEP.HipFireSpreadPenalty = 0.03
 
 SWEP.CanBlindFire = true

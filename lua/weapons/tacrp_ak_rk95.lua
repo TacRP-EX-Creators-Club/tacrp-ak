@@ -33,7 +33,9 @@ SWEP.BalanceStats = {
         Damage_Min = 19,
         ArmorPenetration = 0.95,
 
+        RPM = 600,
         RecoilKick = 5,
+        ClipSize = 35,
 
         MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.75,
@@ -94,7 +96,7 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 SWEP.Damage_Max = 25
 SWEP.Damage_Min = 18
 SWEP.Range_Min = 900 // distance for which to maintain maximum damage
-SWEP.Range_Max = 3800 // distance at which we drop to minimum damage
+SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
 SWEP.Penetration = 10 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.875
 SWEP.ArmorBonus = 2
@@ -102,7 +104,7 @@ SWEP.ArmorBonus = 2
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 5,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1.15,
+    [HITGROUP_STOMACH] = 1.2,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
     [HITGROUP_LEFTLEG] = 0.85,
@@ -119,17 +121,18 @@ SWEP.Firemodes = {
     1
 }
 
-SWEP.RPM = 600
+SWEP.RPM = 550
 
-SWEP.Spread = 0.0065
+SWEP.Spread = 0.006
 
 SWEP.ShootTimeMult = 0.5
 
+SWEP.RecoilResetInstant = false
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 10
-SWEP.RecoilResetTime = 0.12
-SWEP.RecoilDissipationRate = 14
-SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
+SWEP.RecoilMaximum = 8
+SWEP.RecoilResetTime = 0
+SWEP.RecoilDissipationRate = 28
+SWEP.RecoilFirstShotMult = 1
 
 SWEP.RecoilVisualKick = 1
 SWEP.RecoilKick = 6
@@ -143,14 +146,14 @@ SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.9
+SWEP.MoveSpeedMult = 0.92
 SWEP.ShootingSpeedMult = 0.85
 SWEP.SightedSpeedMult = 0.65
 
 SWEP.ReloadSpeedMult = 0.47
 
-SWEP.AimDownSightsTime = 0.4
-SWEP.SprintToFireTime = 0.44
+SWEP.AimDownSightsTime = 0.37
+SWEP.SprintToFireTime = 0.38
 
 SWEP.Sway = 1.25
 SWEP.ScopedSway = 0.15
@@ -185,7 +188,7 @@ SWEP.HolsterPos = Vector(5, -2, -6)
 SWEP.HolsterAng = Angle(0, 0, 0)
 
 
-SWEP.ClipSize = 35
+SWEP.ClipSize = 32
 SWEP.Ammo = "ar2"
 
 SWEP.ReloadTimeMult = 1.2

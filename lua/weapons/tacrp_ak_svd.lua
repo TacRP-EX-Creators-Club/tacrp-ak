@@ -36,6 +36,8 @@ SWEP.BalanceStats = {
         Range_Max = 8000,
         Range_Min = 2500,
 
+        RPM = 180,
+
         MoveSpeedMult = 0.8,
         ShootingSpeedMult = 0.6,
         SightedSpeedMult = 0.55,
@@ -88,7 +90,7 @@ SWEP.ArmorPenetration = 0.775
 SWEP.ArmorBonus = 2
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 4,
+    [HITGROUP_HEAD] = 3,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
@@ -103,7 +105,7 @@ SWEP.MuzzleVelocity = 31000
 // misc. shooting
 
 SWEP.Firemode = 1
-SWEP.RPM = 180
+SWEP.RPM = 150
 
 SWEP.Spread = 0.0005
 
@@ -180,7 +182,7 @@ SWEP.ScopeHideWeapon = true
 SWEP.ClipSize = 10
 SWEP.Ammo = "357"
 
-SWEP.ReloadTimeMult = 1
+SWEP.ReloadTimeMult = 1.15
 SWEP.DropMagazineModel = "models/weapons/tacint_extras/magazines/svd.mdl"
 SWEP.DropMagazineImpact = "metal"
 

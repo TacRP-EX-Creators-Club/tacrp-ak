@@ -11,6 +11,7 @@ SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "Experimental assault rifle with a unique 2-round \"hyperburst.\" The rifle's complex mechanism affords low recoil but is very bulky."
+SWEP.Description_Quote = "\"Antje\""
 
 SWEP.Trivia_Caliber = "5.45x39mm"
 SWEP.Trivia_Manufacturer = "Kalashnikov Concern"
@@ -88,8 +89,8 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 SWEP.Damage_Max = 24
 SWEP.Damage_Min = 17
-SWEP.Range_Min = 1350 // distance for which to maintain maximum damage
-SWEP.Range_Max = 4500 // distance at which we drop to minimum damage
+SWEP.Range_Min = 1100
+SWEP.Range_Max = 3300
 SWEP.Penetration = 7 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.725
 
