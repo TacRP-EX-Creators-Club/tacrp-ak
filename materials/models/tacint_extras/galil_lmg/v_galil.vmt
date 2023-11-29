@@ -12,7 +12,7 @@
 
 	"$bumpmap" "models\tacint_extras\galil_lmg\v_galil_normal"
 
-	"$envmap"		"env_cubemap"
+	//"$envmap"		"env_cubemap"
 	
 	"$rimscale"				"1"
 	"$rimpower"				"0.32"

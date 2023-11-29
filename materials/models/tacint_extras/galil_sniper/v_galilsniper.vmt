@@ -11,7 +11,7 @@
 	"$wrap"	0.47
 	"$basetexture"	"models\tacint_extras\galil_sniper\v_galilsniper_tint"
 	"$bumpmap" "models\tacint_extras\galil_sniper\v_galilsniper_normal"
-	"$envmap"		"env_cubemap"
+	//"$envmap"		"env_cubemap"
 	
 	"$rimscale"				"1"
 	"$rimpower"				"0.32"
