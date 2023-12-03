@@ -91,13 +91,13 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.MarksmanRifle
 
 SWEP.Damage_Max = 28
 SWEP.Damage_Min = 15
-SWEP.Range_Min = 1000
-SWEP.Range_Max = 4200
+SWEP.Range_Min = 800
+SWEP.Range_Max = 3800
 SWEP.Penetration = 10
 SWEP.ArmorPenetration = 0.7
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 3.5,
+    [HITGROUP_HEAD] = 3,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1.25,
     [HITGROUP_LEFTARM] = 1,
@@ -329,7 +329,7 @@ SWEP.Attachments = {
     },
     [4] = {
         PrintName = "Accessory",
-        Category = {"acc", "acc_foldstock", "acc_sling", "acc_duffle", "extendedbelt"},
+        Category = {"acc", "acc_foldstock", "acc_sling", "acc_duffle", "perk_extendedmag"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
     },
