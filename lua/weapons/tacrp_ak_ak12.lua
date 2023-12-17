@@ -114,6 +114,7 @@ SWEP.MuzzleVelocity = 25000
 
 SWEP.Firemodes = {
     -3,
+	2,
     1
 }
 
@@ -324,7 +325,7 @@ SWEP.Attachments = {
     },
     [6] = {
         PrintName = "Trigger",
-        Category = {"trigger_burst"},
+        Category = {"trigger_4pos"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
