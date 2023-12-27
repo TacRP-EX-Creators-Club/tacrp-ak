@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "A well-rounded staple from Eastern Europe with controllable recoil and good range."
+SWEP.Description = "A well-rounded staple from Eastern Europe with controllable recoil and good range. Modifications include lightweight furniture and mounts for dovetail optics."
 
 SWEP.Trivia_Caliber = "5.45x39mm"
 SWEP.Trivia_Manufacturer = "Kalashnikov Concern"
