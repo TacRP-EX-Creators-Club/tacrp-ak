@@ -81,7 +81,7 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 45
+SWEP.Damage_Max = 50
 SWEP.Damage_Min = 34
 SWEP.Range_Min = 1200 // distance for which to maintain maximum damage
 SWEP.Range_Max = 4500 // distance at which we drop to minimum damage
@@ -93,21 +93,21 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 3,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
-    [HITGROUP_LEFTARM] = 1,
-    [HITGROUP_RIGHTARM] = 1,
+    [HITGROUP_LEFTARM] = 0.9,
+    [HITGROUP_RIGHTARM] = 0.9,
     [HITGROUP_LEFTLEG] = 0.75,
     [HITGROUP_RIGHTLEG] = 0.75,
     [HITGROUP_GEAR] = 0.9
 }
 
-SWEP.MuzzleVelocity = 31000
+SWEP.MuzzleVelocity = 38000
 
 // misc. shooting
 
 SWEP.Firemode = 1
-SWEP.RPM = 150
+SWEP.RPM = 180
 
-SWEP.Spread = 0.0005
+SWEP.Spread = 0.0002
 
 SWEP.ShootTimeMult = 0.65
 
