@@ -37,12 +37,6 @@ SWEP.BalanceStats = {
         Range_Min = 2500,
 
         RPM = 180,
-
-        MoveSpeedMult = 0.8,
-        ShootingSpeedMult = 0.6,
-        SightedSpeedMult = 0.55,
-        MeleeSpeedMult = 1,
-        ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
         // TODO
@@ -59,21 +53,9 @@ SWEP.BalanceStats = {
         },
 
         ReloadTimeMult = 1.25,
-
-        MoveSpeedMult = 0.85,
-        ShootingSpeedMult = 0.75,
-        MeleeSpeedMult = 1,
-        SightedSpeedMult = 0.5,
-        ReloadSpeedMult = 0.5,
     },
     [TacRP.BALANCE_PVE] = {
         // TODO
-
-        MoveSpeedMult = 0.8,
-        ShootingSpeedMult = 0.6,
-        SightedSpeedMult = 0.75,
-        MeleeSpeedMult = 1,
-        ReloadSpeedMult = 1,
     },
 }
 
