@@ -36,6 +36,7 @@ SWEP.BalanceStats = {
         Range_Max = 8000,
         Range_Min = 2500,
 
+        RecoilKick = 5,
         RPM = 180,
     },
     [TacRP.BALANCE_TTT] = {
@@ -65,8 +66,8 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 SWEP.Damage_Max = 50
 SWEP.Damage_Min = 34
-SWEP.Range_Min = 1200 // distance for which to maintain maximum damage
-SWEP.Range_Max = 4500 // distance at which we drop to minimum damage
+SWEP.Range_Min = 2000 // distance for which to maintain maximum damage
+SWEP.Range_Max = 6000 // distance at which we drop to minimum damage
 SWEP.Penetration = 11 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.775
 SWEP.ArmorBonus = 2
@@ -87,7 +88,7 @@ SWEP.MuzzleVelocity = 38000
 // misc. shooting
 
 SWEP.Firemode = 1
-SWEP.RPM = 180
+SWEP.RPM = 150
 
 SWEP.Spread = 0.0002
 
@@ -101,8 +102,8 @@ SWEP.RecoilFirstShotMult = 0.75 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 0.75
 
-SWEP.RecoilKick = 5
-SWEP.RecoilStability = 0.7
+SWEP.RecoilKick = 6
+SWEP.RecoilStability = 0.6
 
 SWEP.RecoilSpreadPenalty = 0.003
 SWEP.HipFireSpreadPenalty = 0.08
