@@ -10,7 +10,8 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "4Machine Gun"
 
-SWEP.Description = "Israeli AK derivative in machine gun configuration.\nLightweight for a machine gun, and fires at a brisk and controllable pace but with average stopping power.\nHas a bottle opener in the handguard."
+SWEP.Description = "AK derivative in machine gun configuration.\nLightweight and fires at a brisk and controllable pace but with average stopping power."
+SWEP.Description_Quote = "\"Well ya know, for me, the action is the juice.\""
 
 SWEP.Trivia_Caliber = "5.56x45mm"
 SWEP.Trivia_Manufacturer = "Israel Military Industries"
