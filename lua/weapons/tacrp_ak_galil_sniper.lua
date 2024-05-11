@@ -9,7 +9,7 @@ SWEP.AbbrevName = "Galatz"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "4Consumer"
-SWEP.SubCatType = "6Precision Rifle"
+SWEP.SubCatType = "6Battle Rifle"
 
 SWEP.Description = "Israeli AK derivative in marksman rifle configuration.\nHighly controllable, but has a low firerate and average lethality."
 
