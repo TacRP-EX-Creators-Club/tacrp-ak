@@ -8,7 +8,7 @@ SWEP.PrintName = "IMI Galil ARM"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "4Consumer"
-SWEP.SubCatType = "4Machine Gun"
+SWEP.SubCatType = "5Machine Gun"
 
 SWEP.Description = "AK derivative in machine gun configuration.\nLightweight and fires at a brisk and controllable pace but with average stopping power."
 SWEP.Description_Quote = "\"Well ya know, for me, the action is the juice.\""
