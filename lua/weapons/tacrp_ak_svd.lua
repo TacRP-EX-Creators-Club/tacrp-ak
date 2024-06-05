@@ -196,7 +196,7 @@ SWEP.EjectEffect = 2
 SWEP.AnimationTranslationTable = {
     ["deploy"] = "unholster",
     ["fire_iron"] = "fire1_M",
-    ["fire"] = "fire5_M",
+    ["fire"] = {"fire5_M", "fire5_L", "fire5_R"},
     ["melee"] = {"melee1", "melee2"},
     ["jam"] = "mid_reload"
 }
