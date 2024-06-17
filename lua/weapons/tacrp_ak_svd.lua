@@ -90,7 +90,7 @@ SWEP.RPM = 150
 
 SWEP.Spread = 0.0002
 
-SWEP.ShootTimeMult = 0.65
+SWEP.ShootTimeMult = 0.7
 
 SWEP.RecoilPerShot = 1
 SWEP.RecoilMaximum = 4
@@ -143,8 +143,8 @@ SWEP.BlindFirePos = Vector(3, -2, -5)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(0, -0.35, 0)
-SWEP.SightPos = Vector(-4.775, -7.5, -2.7)
+SWEP.SightAng = Angle(0.05, -0.35, 0)
+SWEP.SightPos = Vector(-4.75, -7.5, -2.7)
 
 SWEP.CorrectivePos = Vector(-0.05, 0, -0.05)
 SWEP.CorrectiveAng = Angle(0.65, 0.7, 0)
