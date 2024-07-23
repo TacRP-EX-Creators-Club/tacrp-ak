@@ -11,6 +11,7 @@ SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "3Submachine Gun"
 
 SWEP.Description = "SMG-sized carbine designed for tank crews and special forces. Impressive firepower in a small package, but not gentle in terms of recoil."
+SWEP.Description_Quote = "\"Mother Russia can rot, for all I care.\""
 
 SWEP.Trivia_Caliber = "5.45x39mm"
 SWEP.Trivia_Manufacturer = "Tula Arms Plant"
