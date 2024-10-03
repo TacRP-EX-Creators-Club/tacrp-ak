@@ -150,7 +150,7 @@ SWEP.SprintPos = Vector(5, 0, -2)
 SWEP.SightAng = Angle(-0.05, 1.35, -0.5)
 SWEP.SightPos = Vector(-4.7, -7.5, -4)
 
-SWEP.CorrectivePos = Vector(0, 0, -0.05)
+SWEP.CorrectivePos = Vector(-0.02, 0, -0.05)
 SWEP.CorrectiveAng = Angle(0.75, 0.7, 0)
 
 SWEP.HolsterVisible = true
@@ -250,6 +250,8 @@ SWEP.ProceduralIronFire = {
     },
 }
 
+SWEP.NoRMR = true
+
 SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
@@ -260,7 +262,7 @@ SWEP.Attachments = {
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
         VMScale = 0.75,
-        Pos_VM = Vector(-5.75, 0.2, 4),
+        Pos_VM = Vector(-5.8, 0.2, 4),
         Ang_VM = Angle(90, 0, 0),
         Pos_WM = Vector(0, 3, 0.6),
         Ang_WM = Angle(0, -90, 0),

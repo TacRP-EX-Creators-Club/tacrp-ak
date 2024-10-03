@@ -251,6 +251,8 @@ SWEP.AttachmentElements = {
     },
 }
 
+SWEP.NoRMR = true
+
 SWEP.ProceduralIronFire = {
     vm_pos = Vector(0, -0.4, -0.3),
     vm_ang = Angle(0, 0.5, 0),
