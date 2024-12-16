@@ -40,7 +40,18 @@ SWEP.BalanceStats = {
         RPM = 180,
     },
     [TacRP.BALANCE_TTT] = {
-        // TODO
+        Damage_Max = 30,
+        Damage_Min = 45,
+        Range_Min = 600,
+        Range_Max = 2500,
+        RPM = 100,
+
+        RecoilResetInstant = true,
+        RecoilResetTime = 0.35,
+        RecoilDissipationRate = 3,
+        RecoilMaximum = 3,
+        RecoilSpreadPenalty = 0.005,
+        RecoilFirstShotMult = 0.9,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 3.5,
@@ -53,12 +64,9 @@ SWEP.BalanceStats = {
             [HITGROUP_GEAR] = 0.5
         },
     },
-    [TacRP.BALANCE_PVE] = {
-        // TODO
-    },
 }
 
-SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
+SWEP.TTTReplace = TacRP.TTTReplacePreset.SniperRifle
 
 // "ballistics"
 
