@@ -119,7 +119,7 @@ TacRP.LoadAtt(ATT, "muzz_ak_comp")
 
 ---------------------------------------------
 ATT = {}
-ATT.PrintName = "P. Suppressor"
+ATT.PrintName = "PBS-5"
 ATT.FullName = "PBS-5 Suppressor"
 ATT.Icon = Material("entities/tacrp_att_muzz_supp_pbs.png", "mips smooth")
 ATT.Description = "AK pattern suppressor improving recoil stability at cost of accuracy."
