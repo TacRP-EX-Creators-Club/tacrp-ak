@@ -12,6 +12,7 @@ SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "6Marksman Rifle"
 
 SWEP.Description = "Israeli AK derivative in marksman rifle configuration.\nHighly controllable, but has a low firerate and average lethality."
+SWEP.Description_Quote = "Also called the Galat'z."
 
 SWEP.Trivia_Caliber = "7.62x51mm"
 SWEP.Trivia_Manufacturer = "Israel Military Industries"
