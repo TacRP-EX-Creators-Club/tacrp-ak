@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP" // "Tactical RP (Extras)"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "7Sniper Rifle"
 
-SWEP.Description = "Russian sniper rifle with low fire rate but great damage and recoil control. Equipped with a 6x scope by default.\nWhile superficially resembling the AK design, it is completely unrelated mechanically."
+SWEP.Description = "Russian sniper/DMR with low fire rate but great damage and control. Equipped with a 6x scope by default.\nWhile resembling an AK, they are mechanically unrelated."
 SWEP.Description_Quote = "Reach out and touch someone the Russian Army way." -- Jagged Alliance: Back in Action (2012) (The gun itself is not a real SVD, but this part of the description is really funny to me)
 
 SWEP.Trivia_Caliber = "7.62x54mmR"
