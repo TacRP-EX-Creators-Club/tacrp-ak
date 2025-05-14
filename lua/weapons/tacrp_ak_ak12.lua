@@ -12,7 +12,7 @@ SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "One of many attempts at modernizing the AK, this experimental model uses burst fire and allows for quick swapping of the weapon's caliber."
-SWEP.Description_Quote = "The Snow Wolf's eye opens."
+SWEP.Description_Quote = "Found on a dead Spetsnaz soldier." -- Killing Floor 2, explaining where the weapon came from.
 
 SWEP.Trivia_Caliber = "5.45x39mm"
 SWEP.Trivia_Manufacturer = "Kalashnikov Concern"
