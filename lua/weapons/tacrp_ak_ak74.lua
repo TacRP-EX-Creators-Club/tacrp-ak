@@ -11,7 +11,7 @@ SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "A well-rounded staple from Eastern Europe with controllable recoil and good range. Modifications include lightweight furniture and mounts for dovetail optics."
-SWEP.Description_Quote = "Looks similar, but just different enough to distinguish the two."
+SWEP.Description_Quote = "\"On the battlefield, it's probably better to wound a man than to kill him.\"" -- 'The History of the AK-74' by S1apSh0es - https://youtu.be/6jZOzB3oeSs?feature=shared
 
 SWEP.Trivia_Caliber = "5.45x39mm"
 SWEP.Trivia_Manufacturer = "Kalashnikov Concern"
