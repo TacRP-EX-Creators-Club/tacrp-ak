@@ -170,7 +170,8 @@ SWEP.ScopeLevels = 1 // 2 = like CS:S
 SWEP.ScopeHideWeapon = true
 
 SWEP.ClipSize = 10
-SWEP.Ammo = "357"
+SWEP.Ammo = "ar2"
+SWEP.Ammo_TTT = "357"
 SWEP.Ammo_Expanded = "ti_rifle"
 
 SWEP.ReloadTimeMult = 1.15
