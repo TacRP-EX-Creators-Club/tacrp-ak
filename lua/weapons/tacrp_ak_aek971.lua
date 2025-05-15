@@ -11,7 +11,7 @@ SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "Experimental assault rifle using a unique dampening mechanism to reduce felt recoil. High fire rate but medicore range."
-SWEP.Description_Quote = "28000 Assault Rifle XP required to unlock." -- Battlefield 4 (2013) unlock requirement
+SWEP.Description_Quote = "Saw extensive use in the Battle for Paris." -- Battlefield 3 (2011)
 
 SWEP.Trivia_Caliber = "5.45x39mm"
 SWEP.Trivia_Manufacturer = "Kovrovskiy Mekhanicheskiy Zavod"
