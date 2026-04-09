@@ -2,11 +2,10 @@ local ATT = {}
 
 ---------------------------------------------
 ATT = {}
-ATT.PrintName = "Lightweight"
-ATT.FullName = "AK-74 Lightweight Furniture"
-
+ATT.PrintName = "att.acc_ak74_poly.name"
+ATT.FullName = "att.acc_ak74_poly.name.full"
 ATT.Icon = Material("entities/tacrp_att_acc_ak74_poly.png", "mips smooth")
-ATT.Description = "Paratrooper configuration for increased handling and mobility."
+ATT.Description = "att.acc_ak74_poly.desc"
 ATT.Pros = {"stat.movespeed", "rating.maneuvering", "rating.handling"}
 ATT.Cons = {"stat.scopedsway", "stat.recoil"}
 
@@ -36,11 +35,10 @@ TacRP.LoadAtt(ATT, "acc_ak74_poly")
 
 ---------------------------------------------
 ATT = {}
-ATT.PrintName = "7.62x39mm"
-ATT.FullName = "AK-12 7.62x39mm Mod Kit"
-
+ATT.PrintName = "att.ammo_ak12_762.name"
+ATT.FullName = "att.ammo_ak12_762.name.full"
 ATT.Icon = Material("entities/tacrp_att_ammo_ak12_762.png", "mips smooth")
-ATT.Description = "Load a more powerful cartridge, increasing both damage and recoil."
+ATT.Description = "att.ammo_ak12_762.desc"
 ATT.Pros = {"stat.damage", "att.procon.armor"}
 ATT.Cons = {"stat.rpm", "stat.recoil"}
 
@@ -67,10 +65,10 @@ TacRP.LoadAtt(ATT, "ammo_ak12_762")
 
 ---------------------------------------------
 ATT = {}
-ATT.PrintName = "Booster"
-ATT.FullName = "6P26 Muzzle Booster"
+ATT.PrintName = "att.muzz_ak_booster.name"
+ATT.FullName = "att.muzz_ak_booster.name.full"
 ATT.Icon = Material("entities/tacrp_att_muzz_ak_booster.png", "mips smooth")
-ATT.Description = "AK pattern muzzle device that increases rate of fire."
+ATT.Description = "att.muzz_ak_booster.desc"
 ATT.Pros = {"stat.rpm", "stat.muzzlevelocity"}
 ATT.Cons = {"stat.recoil"}
 
@@ -94,10 +92,10 @@ TacRP.LoadAtt(ATT, "muzz_ak_booster")
 
 ---------------------------------------------
 ATT = {}
-ATT.PrintName = "Compensator"
-ATT.FullName = "6P20 Compensator"
+ATT.PrintName = "att.muzz_ak_comp.name"
+ATT.FullName = "att.muzz_ak_comp.name.full"
 ATT.Icon = Material("entities/tacrp_att_muzz_ak_comp.png", "mips smooth")
-ATT.Description = "AK pattern muzzle device that straightens recoil."
+ATT.Description = "att.muzz_ak_comp.desc"
 ATT.Pros = {"stat.recoilkick", "stat.recoilstability"}
 ATT.Cons = {"stat.spread", "stat.bloomintensity"}
 
@@ -119,10 +117,10 @@ TacRP.LoadAtt(ATT, "muzz_ak_comp")
 
 ---------------------------------------------
 ATT = {}
-ATT.PrintName = "PBS-5"
-ATT.FullName = "PBS-5 Suppressor"
+ATT.PrintName = "att.muzz_supp_pbs.name"
+ATT.FullName = "att.muzz_supp_pbs.name.full"
 ATT.Icon = Material("entities/tacrp_att_muzz_supp_pbs.png", "mips smooth")
-ATT.Description = "AK pattern suppressor improving recoil stability at cost of accuracy."
+ATT.Description = "att.muzz_supp_pbs.desc"
 ATT.Pros = {"stat.vol_shoot", "stat.recoilstability"}
 ATT.Cons = {"stat.spread", "stat.muzzlevelocity"}
 
@@ -149,9 +147,10 @@ TacRP.LoadAtt(ATT, "muzz_supp_pbs")
 
 ---------------------------------------------
 ATT = {}
-ATT.PrintName = "Kobra"
+ATT.PrintName = "att.optic_ak_kobra.name"
+ATT.FullName = "att.optic_ak_kobra.name.full"
 ATT.Icon = Material("entities/tacrp_att_optic_ak_kobra.png", "mips smooth")
-ATT.Description = "Russian dovetail reflex sight."
+ATT.Description = "att.optic_ak_kobra.desc"
 ATT.Pros = {"att.sight.1"}
 
 ATT.Category = {"optic_ak", "optic_ak2"}
@@ -180,9 +179,10 @@ TacRP.LoadAtt(ATT, "optic_ak_kobra")
 
 ---------------------------------------------
 ATT = {}
-ATT.PrintName = "Nimrod 6x40"
+ATT.PrintName = "att.optic_galil.name"
+ATT.FullName = "att.optic_galil.name.full"
 ATT.Icon = Material("entities/tacrp_att_optic_galil_scope.png", "mips smooth")
-ATT.Description = "Sniper optic designed to be mounted onto Galil rifles."
+ATT.Description = "att.optic_galil.desc"
 ATT.Pros = {"att.zoom.6"}
 
 ATT.Category = {"optic_galil"}
