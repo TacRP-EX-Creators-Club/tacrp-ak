@@ -12,7 +12,7 @@ SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "5Machine Gun"
 
 SWEP.Description = "AK derivative in machine gun configuration.\nLightweight and fires at a brisk and controllable pace but with average stopping power."
-SWEP.Description_Quote = "\"Well ya know, for me, the action is the juice.\""
+SWEP.Description_Quote = "\"Well ya know, for me, the action is the juice.\"" -- Heat (1995)
 
 SWEP.Trivia_Caliber = "5.56x45mm"
 SWEP.Trivia_Manufacturer = "Israel Military Industries"
